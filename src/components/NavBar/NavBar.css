@@ -11,3 +11,8 @@
 .NavBar h3 a {
   text-decoration: none;
 }
+
+.NavBar__not-logged-in {
+  display: flex;
+  flex-direction: column;
+}

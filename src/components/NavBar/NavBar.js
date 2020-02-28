@@ -20,7 +20,7 @@ class NavBar extends Component {
   renderLoginLink() {
     return (
       <div className="NavBar__not-logged-in">
-        <Link to="/">Log in</Link>
+        <Link to="/">Login</Link>
         <Link to="/register">Register</Link>
       </div>
     );
