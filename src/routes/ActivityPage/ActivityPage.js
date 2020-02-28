@@ -18,9 +18,9 @@ class ActivityPage extends Component {
           <ActivityTracker />
           <Link to={"/addlog"}>Add Log</Link>
         </header>
-        <section className="ActivityPage__logs">
+        <div className="ActivityPage__logs">
           {this.renderLogs()}
-        </section>
+        </div>
       </div>
     );
   }
