@@ -29,9 +29,9 @@ class NavBar extends Component {
   render() {
     return (
       <nav className="NavBar">
-        <h3>
-          <Link to="/activity">STSaver</Link>
-        </h3>
+        <h2>
+          <Link to="/activity">S.T.Saver</Link>
+        </h2>
         {this.renderLoginLink()}
       </nav>
     );
