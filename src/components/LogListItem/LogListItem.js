@@ -18,8 +18,10 @@ function LogListItem(props) {
         <dt>Breaks taken:</dt>
         <dd>{log.breaks}</dd>
       </dl>
-      <button>Edit</button>
-      <button>Delete</button>
+      <div className="LogListItem__buttons">
+        <button>Edit</button>
+        <button>Delete</button>
+      </div>
     </section>
   );
 }
