@@ -3,11 +3,13 @@ import { withRouter } from "react-router-dom";
 import "./LoginForm.css";
 
 class LoginForm extends Component {
-  handleSubmit = () => {
+  handleSubmit = e => {
+    e.preventDefault();
     this.props.history.push("/activity");
   };
 
-  handleDemoClick = () => {
+  handleDemoClick = e => {
+    e.preventDefault();
     this.props.history.push("/activity");
   };
 
