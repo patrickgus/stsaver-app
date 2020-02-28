@@ -2,3 +2,20 @@
   display: flex;
   flex-direction: column;
 }
+
+.LoginForm div {
+  margin-bottom: 15px;
+}
+
+.LoginForm__header {
+  text-align: center;
+}
+
+.LoginForm__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.LoginForm__buttons button {
+  width: 100px;
+}
