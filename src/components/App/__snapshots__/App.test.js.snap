@@ -10,14 +10,14 @@ exports[`App component renders the UI as expected 1`] = `
     <nav
       className="NavBar"
     >
-      <h3>
+      <h2>
         <a
           href="/activity"
           onClick={[Function]}
         >
-          STSaver
+          S.T.Saver
         </a>
-      </h3>
+      </h2>
       <div
         className="NavBar__not-logged-in"
       >
@@ -46,87 +46,104 @@ exports[`App component renders the UI as expected 1`] = `
         className="LandingPage__header"
       >
         <h1>
-          STSaver
+          Screen Time Saver
         </h1>
-        <h2>
-          Rested eyes increase productivity
-        </h2>
       </header>
-      <section>
+      <section
+        className="LandingPage__description"
+      >
         <h3>
           Keep track of your screen time
         </h3>
-        <img
-          alt="screenshot of activity page"
-          src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
-        />
+        <div
+          className="LandingPage__description-image"
+        >
+          <img
+            alt="screenshot of activity page"
+            src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+          />
+        </div>
         <p>
           Keep logs of you screen time sessions and set goals to limit the amount of exposure. Set goals for how much time you spend on your computer, phone, tablet, etc.
         </p>
       </section>
-      <section>
+      <section
+        className="LandingPage__description"
+      >
         <h3>
           Manage your screen time
         </h3>
-        <img
-          alt="screenshot of timer page"
-          src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
-        />
+        <div
+          className="LandingPage__description-image"
+        >
+          <img
+            alt="screenshot of timer page"
+            src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+          />
+        </div>
         <p>
           Set a timer to get a reminder to take a break. A good rule to follow is the 20-20-20 rule, which is to take a break every 20 minutes by looking at an object 20 feet away for 20 seconds.
         </p>
       </section>
-      <form
-        className="LoginForm"
-        onSubmit={[Function]}
+      <div
+        className="LandingPage__login"
       >
-        <div
-          className="LoginForm__header"
+        <form
+          className="LoginForm"
+          onSubmit={[Function]}
         >
-          <h2>
-            Login Here
-          </h2>
-        </div>
-        <div
-          className="user_name"
-        >
-          <label
-            htmlFor="LoginForm__username"
+          <div
+            className="LoginForm__header"
           >
-            Username
-          </label>
-          <input
-            id="LoginForm__username"
-            name="username"
-            type="text"
-          />
-        </div>
-        <div
-          className="password"
-        >
-          <label
-            htmlFor="LoginForm__password"
+            <h2>
+              Login Here
+            </h2>
+          </div>
+          <div
+            className="LoginForm__username"
           >
-            Password
-          </label>
-          <input
-            id="LoginForm__password"
-            name="password"
-            type="password"
-          />
-        </div>
-        <button
-          type="submit"
-        >
-          Login
-        </button>
-        <button
-          className="LoginForm__demo"
-          onClick={[Function]}
-        >
-          Demo
-        </button>
-      </form>
+            <label
+              htmlFor="username"
+            >
+              Username
+            </label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+            />
+          </div>
+          <div
+            className="LoginForm__password"
+          >
+            <label
+              htmlFor="password"
+            >
+              Password
+            </label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+            />
+          </div>
+          <div
+            className="LoginForm__buttons"
+          >
+            <button
+              type="submit"
+            >
+              Login
+            </button>
+            <button
+              className="LoginForm__demo"
+              onClick={[Function]}
+            >
+              Demo
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </main>
 </div>
