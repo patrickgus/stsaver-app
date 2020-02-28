@@ -1,0 +1,10 @@
+.RegistrationForm {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.RegistrationForm__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
