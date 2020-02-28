@@ -16,38 +16,21 @@ class RegistrationForm extends Component {
   render() {
     return (
       <form className="RegistrationForm" onSubmit={this.handleSubmit}>
-        <div className="full_name">
-          <label htmlFor="RegistrationForm__full_name">
-            Full name
-          </label>
-          <input
-            name="fullname"
-            type="text"
-            required
-            id="RegistrationForm__full_name"
-          />
+        <div className="RegistrationForm__first_name">
+          <label htmlFor="first_name">First name</label>
+          <input name="first_name" type="text" required id="first_name" />
         </div>
-        <div className="user_name">
-          <label htmlFor="RegistrationForm__user_name">
-            Username
-          </label>
-          <input
-            name="username"
-            type="text"
-            required
-            id="RegistrationForm__user_name"
-          />
+        <div className="RegistrationForm__last_name">
+          <label htmlFor="last_name">Last name</label>
+          <input name="last_name" type="text" required id="last_name" />
         </div>
-        <div className="password">
-          <label htmlFor="RegistrationForm__password">
-            Password
-          </label>
-          <input
-            name="password"
-            type="password"
-            required
-            id="RegistrationForm__password"
-          />
+        <div className="RegistrationForm__username">
+          <label htmlFor="username">Username</label>
+          <input name="username" type="text" required id="username" />
+        </div>
+        <div className="RegistrationForm__password">
+          <label htmlFor="password">Password</label>
+          <input name="password" type="password" required id="password" />
         </div>
         <div className="RegistrationForm__buttons">
           <button type="submit">Register</button>

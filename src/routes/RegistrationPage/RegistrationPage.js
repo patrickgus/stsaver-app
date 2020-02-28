@@ -6,7 +6,7 @@ class RegistrationPage extends Component {
   render() {
     return (
       <div className="RegistrationPage">
-        <h2>Register</h2>
+        <h2>Sign up for an account</h2>
         <RegistrationForm />
       </div>
     );
