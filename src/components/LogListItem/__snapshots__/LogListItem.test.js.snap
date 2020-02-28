@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogListItem component renders the item as expected 1`] = `
+<section
+  className="LogListItem"
+>
+  <h3 />
+  <p>
+     - 
+  </p>
+  <dl>
+    <dt>
+      Screen time hours:
+    </dt>
+    <dd />
+    <dt>
+      Media type:
+    </dt>
+    <dd />
+    <dt>
+      Breaks taken:
+    </dt>
+    <dd />
+  </dl>
+  <button>
+    Edit
+  </button>
+  <button>
+    Delete
+  </button>
+</section>
+`;
