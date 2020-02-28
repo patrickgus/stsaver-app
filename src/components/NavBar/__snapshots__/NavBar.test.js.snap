@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar component renders the UI as expected 1`] = `
+<nav
+  className="NavBar"
+>
+  <h3>
+    <a
+      href="/activity"
+      onClick={[Function]}
+    >
+      STSaver
+    </a>
+  </h3>
+  <div
+    className="NavBar__not-logged-in"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Login
+    </a>
+    <a
+      href="/register"
+      onClick={[Function]}
+    >
+      Register
+    </a>
+  </div>
+</nav>
+`;
