@@ -22,7 +22,6 @@ class LandingPage extends Component {
       <div className="LandingPage">
         <header className="LandingPage__header">
           <h1>Screen Time Saver</h1>
-          {/* <h2>Rested eyes increase productivity</h2> */}
         </header>
 
         <section className="LandingPage__description">
