@@ -1,7 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders the UI as expected 1`] = `
-<main
+<div
   className="App"
-/>
+>
+  <header
+    className="App__header"
+  >
+    <nav
+      className="NavBar"
+    >
+      <h3>
+        <a
+          href="/activity"
+          onClick={[Function]}
+        >
+          STSaver
+        </a>
+      </h3>
+      <div
+        className="NavBar__not-logged-in"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Login
+        </a>
+        <a
+          href="/register"
+          onClick={[Function]}
+        >
+          Register
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="App__main"
+  >
+    <div
+      className="LandingPage"
+    >
+      <header
+        className="LandingPage__header"
+      >
+        <h1>
+          STSaver
+        </h1>
+        <h2>
+          Rested eyes increase productivity
+        </h2>
+      </header>
+      <section>
+        <h3>
+          Keep track of your screen time
+        </h3>
+        <img
+          alt="screenshot of activity page"
+          src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+        />
+        <p>
+          Keep logs of you screen time sessions and set goals to limit the amount of exposure. Set goals for how much time you spend on your computer, phone, tablet, etc.
+        </p>
+      </section>
+      <section>
+        <h3>
+          Manage your screen time
+        </h3>
+        <img
+          alt="screenshot of timer page"
+          src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+        />
+        <p>
+          Set a timer to get a reminder to take a break. A good rule to follow is the 20-20-20 rule, which is to take a break every 20 minutes by looking at an object 20 feet away for 20 seconds.
+        </p>
+      </section>
+      <form
+        className="LoginForm"
+        onSubmit={[Function]}
+      >
+        <div
+          className="LoginForm__header"
+        >
+          <h2>
+            Login Here
+          </h2>
+        </div>
+        <div
+          className="user_name"
+        >
+          <label
+            htmlFor="LoginForm__username"
+          >
+            Username
+          </label>
+          <input
+            id="LoginForm__username"
+            name="username"
+            type="text"
+          />
+        </div>
+        <div
+          className="password"
+        >
+          <label
+            htmlFor="LoginForm__password"
+          >
+            Password
+          </label>
+          <input
+            id="LoginForm__password"
+            name="password"
+            type="password"
+          />
+        </div>
+        <button
+          type="submit"
+        >
+          Login
+        </button>
+        <button
+          className="LoginForm__demo"
+          onClick={[Function]}
+        >
+          Demo
+        </button>
+      </form>
+    </div>
+  </main>
+</div>
 `;
