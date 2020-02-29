@@ -4,14 +4,14 @@ exports[`NavBar component renders the UI as expected 1`] = `
 <nav
   className="NavBar"
 >
-  <h3>
+  <h2>
     <a
       href="/activity"
       onClick={[Function]}
     >
-      STSaver
+      S.T.Saver
     </a>
-  </h3>
+  </h2>
   <div
     className="NavBar__not-logged-in"
   >

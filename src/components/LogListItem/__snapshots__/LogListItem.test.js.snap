@@ -22,11 +22,15 @@ exports[`LogListItem component renders the item as expected 1`] = `
     </dt>
     <dd />
   </dl>
-  <button>
-    Edit
-  </button>
-  <button>
-    Delete
-  </button>
+  <div
+    className="LogListItem__buttons"
+  >
+    <button>
+      Edit
+    </button>
+    <button>
+      Delete
+    </button>
+  </div>
 </section>
 `;

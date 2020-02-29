@@ -6,45 +6,60 @@ exports[`RegistrationForm component renders the form as expected 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="full_name"
+    className="RegistrationForm__form-section"
   >
     <label
-      htmlFor="RegistrationForm__full_name"
+      htmlFor="first_name"
     >
-      Full name
+      First name
     </label>
     <input
-      id="RegistrationForm__full_name"
-      name="fullname"
+      id="first_name"
+      name="first_name"
       required={true}
       type="text"
     />
   </div>
   <div
-    className="user_name"
+    className="RegistrationForm__form-section"
   >
     <label
-      htmlFor="RegistrationForm__user_name"
+      htmlFor="last_name"
+    >
+      Last name
+    </label>
+    <input
+      id="last_name"
+      name="last_name"
+      required={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="RegistrationForm__form-section"
+  >
+    <label
+      htmlFor="username"
     >
       Username
     </label>
     <input
-      id="RegistrationForm__user_name"
+      id="username"
       name="username"
       required={true}
       type="text"
     />
   </div>
   <div
-    className="password"
+    className="RegistrationForm__form-section"
   >
     <label
-      htmlFor="RegistrationForm__password"
+      htmlFor="password"
     >
       Password
     </label>
     <input
-      id="RegistrationForm__password"
+      id="password"
       name="password"
       required={true}
       type="password"

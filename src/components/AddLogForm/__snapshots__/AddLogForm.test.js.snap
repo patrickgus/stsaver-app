@@ -101,15 +101,19 @@ exports[`AddLogForm component renders the UI as expected 1`] = `
       type="number"
     />
   </div>
-  <button
-    type="submit"
+  <div
+    className="AddLogForm__buttons"
   >
-    Submit
-  </button>
-  <button
-    onClick={[Function]}
-  >
-    Cancel
-  </button>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Cancel
+    </button>
+  </div>
 </form>
 `;

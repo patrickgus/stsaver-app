@@ -48,6 +48,65 @@ exports[`App component renders the UI as expected 1`] = `
         <h1>
           Screen Time Saver
         </h1>
+        <div
+          className="LandingPage__login"
+        >
+          <form
+            className="LoginForm"
+            onSubmit={[Function]}
+          >
+            <div
+              className="LoginForm__header"
+            >
+              <h2>
+                Login Here
+              </h2>
+            </div>
+            <div
+              className="LoginForm__form-section"
+            >
+              <label
+                htmlFor="username"
+              >
+                Username
+              </label>
+              <input
+                id="username"
+                name="username"
+                type="text"
+              />
+            </div>
+            <div
+              className="LoginForm__form-section"
+            >
+              <label
+                htmlFor="password"
+              >
+                Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+              />
+            </div>
+            <div
+              className="LoginForm__buttons"
+            >
+              <button
+                type="submit"
+              >
+                Login
+              </button>
+              <button
+                className="LoginForm__demo"
+                onClick={[Function]}
+              >
+                Demo
+              </button>
+            </div>
+          </form>
+        </div>
       </header>
       <section
         className="LandingPage__description"
@@ -85,65 +144,6 @@ exports[`App component renders the UI as expected 1`] = `
           Set a timer to get a reminder to take a break. A good rule to follow is the 20-20-20 rule, which is to take a break every 20 minutes by looking at an object 20 feet away for 20 seconds.
         </p>
       </section>
-      <div
-        className="LandingPage__login"
-      >
-        <form
-          className="LoginForm"
-          onSubmit={[Function]}
-        >
-          <div
-            className="LoginForm__header"
-          >
-            <h2>
-              Login Here
-            </h2>
-          </div>
-          <div
-            className="LoginForm__username"
-          >
-            <label
-              htmlFor="username"
-            >
-              Username
-            </label>
-            <input
-              id="username"
-              name="username"
-              type="text"
-            />
-          </div>
-          <div
-            className="LoginForm__password"
-          >
-            <label
-              htmlFor="password"
-            >
-              Password
-            </label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-            />
-          </div>
-          <div
-            className="LoginForm__buttons"
-          >
-            <button
-              type="submit"
-            >
-              Login
-            </button>
-            <button
-              className="LoginForm__demo"
-              onClick={[Function]}
-            >
-              Demo
-            </button>
-          </div>
-        </form>
-      </div>
     </div>
   </main>
 </div>
