@@ -19,11 +19,11 @@ class LoginForm extends Component {
         <div className="LoginForm__header">
           <h2>Login Here</h2>
         </div>
-        <div className="LoginForm__username">
+        <div className="LoginForm__form-section">
           <label htmlFor="username">Username</label>
           <input type="text" name="username" id="username" />
         </div>
-        <div className="LoginForm__password">
+        <div className="LoginForm__form-section">
           <label htmlFor="password">Password</label>
           <input name="password" type="password" id="password" />
         </div>

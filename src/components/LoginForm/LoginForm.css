@@ -3,12 +3,13 @@
   flex-direction: column;
 }
 
-.LoginForm div {
+.LoginForm__header {
+  text-align: center;
   margin-bottom: 15px;
 }
 
-.LoginForm__header {
-  text-align: center;
+.LoginForm__form-section {
+  margin-bottom: 15px;
 }
 
 .LoginForm__buttons {
