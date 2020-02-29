@@ -40,8 +40,10 @@ class AddLogForm extends Component {
           <label htmlFor="breaks">Number of breaks</label>
           <input type="number" name="breaks" id="breaks" required />
         </div>
-        <button type="submit">Submit</button>
-        <button onClick={this.handleCancel}>Cancel</button>
+        <div className="AddLogForm__buttons">
+          <button type="submit">Submit</button>
+          <button onClick={this.handleCancel}>Cancel</button>
+        </div>
       </form>
     );
   }
