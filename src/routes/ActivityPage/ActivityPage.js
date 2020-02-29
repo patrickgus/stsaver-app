@@ -17,10 +17,9 @@ class ActivityPage extends Component {
           <h1>Screen Time Activity</h1>
           <ActivityTracker />
           <Link to={"/addlog"}>Add Log</Link>
+          <Link to={"/timer"}>Timer</Link>
         </header>
-        <div className="ActivityPage__logs">
-          {this.renderLogs()}
-        </div>
+        <div className="ActivityPage__logs">{this.renderLogs()}</div>
       </div>
     );
   }
