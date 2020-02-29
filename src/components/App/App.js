@@ -4,6 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import LandingPage from "../../routes/LandingPage/LandingPage";
 import RegistrationPage from "../../routes/RegistrationPage/RegistrationPage";
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
+import AddLogPage from "../../routes/AddLogPage/AddLogPage";
 import "./App.css";
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact path={"/"} component={LandingPage} />
             <Route path={"/register"} component={RegistrationPage} />
             <Route path={"/activity"} component={ActivityPage} />
+            <Route path={"/addlog"} component={AddLogPage} />
           </Switch>
         </main>
       </div>
