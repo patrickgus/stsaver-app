@@ -5,7 +5,7 @@ export default [
     start: "5:00pm",
     end: "7:00pm",
     hours: 2,
-    media_type: "phone",
+    media_type: "Phone",
     breaks: 0
   },
   {
@@ -14,7 +14,7 @@ export default [
     start: "7:00am",
     end: "12:00pm",
     hours: 5,
-    media_type: "computer",
+    media_type: "Computer",
     breaks: 10
   },
   {
@@ -23,7 +23,7 @@ export default [
     start: "4:00pm",
     end: "8:00pm",
     hours: 4,
-    media_type: "tablet",
+    media_type: "Tablet",
     breaks: 5
   },
   {
@@ -32,7 +32,7 @@ export default [
     start: "7:00pm",
     end: "2:00pm",
     hours: 7,
-    media_type: "computer",
+    media_type: "Computer",
     breaks: 15
   },
   {
@@ -41,7 +41,7 @@ export default [
     start: "2:00pm",
     end: "6:00pm",
     hours: 4,
-    media_type: "computer",
+    media_type: "Computer",
     breaks: 8
   }
 ];
