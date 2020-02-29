@@ -12,7 +12,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
   >
     <img
       alt="placeholder for activity tracker chart"
-      src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+      src="Activity-chart-demo.PNG"
     />
   </div>
   <dl
