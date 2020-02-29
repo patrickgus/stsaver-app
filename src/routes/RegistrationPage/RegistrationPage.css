@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.RegistrationPage h2 {
+.RegistrationPage__header {
   margin: 25px 0;
   padding-top: 25px;
 }
