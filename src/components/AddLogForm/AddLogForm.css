@@ -1,0 +1,20 @@
+.AddLogForm__form-section {
+  margin-bottom: 15px;
+}
+
+.AddLogForm__form-section label {
+  margin-right: 5px;
+}
+
+.times input {
+  width: 80px;
+}
+
+.AddLogForm__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#breaks {
+  width: 50px;
+}

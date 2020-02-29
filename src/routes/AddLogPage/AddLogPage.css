@@ -1,0 +1,12 @@
+.AddLogPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AddLogPage__header {
+  width: 250px;
+  text-align: center;
+  margin: 30px 0;
+  padding-top: 30px;
+}
