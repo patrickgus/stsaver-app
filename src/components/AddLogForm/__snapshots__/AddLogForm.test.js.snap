@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddLogForm component renders the UI as expected 1`] = `
+<form
+  className="AddLogForm"
+  onSubmit={[Function]}
+>
+  <div
+    className="AddLogForm__form-section"
+  >
+    <label
+      htmlFor="date"
+    >
+      Date
+    </label>
+    <input
+      id="date"
+      name="date"
+      required={true}
+      type="date"
+    />
+  </div>
+  <div
+    className="AddLogForm__form-section times"
+  >
+    <label
+      htmlFor="start-time"
+    >
+      Start time
+    </label>
+    <input
+      id="start-time"
+      name="start-time"
+      required={true}
+      type="time"
+    />
+    <label
+      htmlFor="end-time"
+    >
+      End time
+    </label>
+    <input
+      id="end-time"
+      name="end-time"
+      required={true}
+      type="time"
+    />
+  </div>
+  <div
+    className="AddLogForm__form-section"
+  >
+    <label
+      htmlFor="media-type"
+    >
+      Media type
+    </label>
+    <select
+      id="media-type"
+      name="media-type"
+      required={true}
+    >
+      <option
+        value=""
+      >
+        --Choose one--
+      </option>
+      <option
+        value="computer"
+      >
+        Computer
+      </option>
+      <option
+        value="phone"
+      >
+        Phone
+      </option>
+      <option
+        value="tablet"
+      >
+        Tablet
+      </option>
+      <option
+        value="television"
+      >
+        Television
+      </option>
+    </select>
+  </div>
+  <div
+    className="AddLogForm__form-section"
+  >
+    <label
+      htmlFor="breaks"
+    >
+      Number of breaks
+    </label>
+    <input
+      id="breaks"
+      name="breaks"
+      required={true}
+      type="number"
+    />
+  </div>
+  <button
+    type="submit"
+  >
+    Submit
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Cancel
+  </button>
+</form>
+`;
