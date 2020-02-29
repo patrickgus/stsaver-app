@@ -1,4 +1,5 @@
 import React from "react";
+import ActivityChart from "../../images/Activity-chart-demo.PNG";
 import "./ActivityTracker.css";
 
 function ActivityTracker() {
@@ -6,10 +7,7 @@ function ActivityTracker() {
     <div className="ActivityTracker">
       <h2>Activity Tracker</h2>
       <div className="ActivityTracker__chart">
-        <img
-          src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
-          alt="placeholder for activity tracker chart"
-        />
+        <img src={ActivityChart} alt="placeholder for activity tracker chart" />
       </div>
       <dl className="ActivityTracker__stats">
         <dt>Total Hours:</dt>
