@@ -5,6 +5,7 @@ import LandingPage from "../../routes/LandingPage/LandingPage";
 import RegistrationPage from "../../routes/RegistrationPage/RegistrationPage";
 import ActivityPage from "../../routes/ActivityPage/ActivityPage";
 import AddLogPage from "../../routes/AddLogPage/AddLogPage";
+import TimerPage from "../../routes/TimerPage/TimerPage";
 import "./App.css";
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path={"/register"} component={RegistrationPage} />
             <Route path={"/activity"} component={ActivityPage} />
             <Route path={"/addlog"} component={AddLogPage} />
+            <Route path={"/timer"} component={TimerPage} />
           </Switch>
         </main>
       </div>
