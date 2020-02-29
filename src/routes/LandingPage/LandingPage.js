@@ -22,6 +22,7 @@ class LandingPage extends Component {
       <div className="LandingPage">
         <header className="LandingPage__header">
           <h1>Screen Time Saver</h1>
+          <div className="LandingPage__login">{this.renderNotLoggedIn()}</div>
         </header>
 
         <section className="LandingPage__description">
@@ -53,7 +54,6 @@ class LandingPage extends Component {
             looking at an object 20 feet away for 20 seconds.
           </p>
         </section>
-        <div className="LandingPage__login">{this.renderNotLoggedIn()}</div>
       </div>
     );
   }
