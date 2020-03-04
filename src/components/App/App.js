@@ -53,10 +53,10 @@ class App extends Component {
         <main className="App__main">
           <Switch>
             <Route exact path={"/"} component={LandingPage} />
-            <Route path={"/register"} component={RegistrationPage} />
-            <Route path={"/activity"} component={ActivityPage} />
-            <Route path={"/addlog"} component={AddLogPage} />
-            <Route path={"/timer"} component={TimerPage} />
+            <PublicOnlyRoute path={"/register"} component={RegistrationPage} />
+            <PrivateRoute path={"/activity"} component={ActivityPage} />
+            <PrivateRoute path={"/addlog"} component={AddLogPage} />
+            <PrivateRoute path={"/timer"} component={TimerPage} />
           </Switch>
         </main>
       </div>
