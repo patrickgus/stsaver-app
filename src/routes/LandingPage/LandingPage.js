@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import TokenService from "../../services/token-service";
 import LoginForm from "../../components/LoginForm/LoginForm";
 import "./LandingPage.css";
 
@@ -22,7 +23,11 @@ class LandingPage extends Component {
       <div className="LandingPage">
         <header className="LandingPage__header">
           <h1>Screen Time Saver</h1>
-          <div className="LandingPage__login">{this.renderNotLoggedIn()}</div>
+          <div className="LandingPage__login">
+            {TokenService.hasAuthToken()
+              ? this.renderLoggedIn()
+              : this.renderNotLoggedIn()}
+          </div>
         </header>
 
         <section className="LandingPage__description">
