@@ -1,11 +1,32 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+import AuthApiService from "../../services/auth-api-service";
 import "./RegistrationForm.css";
 
 class RegistrationForm extends Component {
+  state = { error: null };
+
   handleSubmit = e => {
     e.preventDefault();
-    this.props.history.push("/activity");
+    const { first_name, last_name, username, password } = e.target;
+
+    this.setState({ error: null });
+    AuthApiService.postUser({
+      username: username.value,
+      password: password.value,
+      first_name: first_name.value,
+      last_name: last_name.value
+    })
+      .then(user => {
+        first_name.value = "";
+        last_name.value = "";
+        username.value = "";
+        password.value = "";
+        this.props.history.push("/activity");
+      })
+      .catch(res => {
+        this.setState({ error: res.error });
+      });
   };
 
   handleCancel = e => {
@@ -14,8 +35,10 @@ class RegistrationForm extends Component {
   };
 
   render() {
+    const { error } = this.state;
     return (
       <form className="RegistrationForm" onSubmit={this.handleSubmit}>
+        <div role="alert">{error && <p className="error">{error}</p>}</div>
         <div className="RegistrationForm__form-section">
           <label htmlFor="first_name">First name</label>
           <input name="first_name" type="text" required id="first_name" />
