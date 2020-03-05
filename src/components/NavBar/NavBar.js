@@ -1,9 +1,15 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
+import TokenService from "../../services/token-service";
+import IdleService from "../../services/idle-service";
 import "./NavBar.css";
 
 class NavBar extends Component {
   handleLogoutClick = () => {
+    TokenService.clearAuthToken();
+    TokenService.clearCallbackBeforeExpiry();
+    IdleService.unRegisterIdleResets();
+
     this.props.history.push("/");
   };
 
@@ -32,7 +38,9 @@ class NavBar extends Component {
         <h2>
           <Link to="/activity">S.T.Saver</Link>
         </h2>
-        {this.renderLoginLink()}
+        {TokenService.hasAuthToken()
+          ? this.renderLogoutLink()
+          : this.renderLoginLink()}
       </nav>
     );
   }
