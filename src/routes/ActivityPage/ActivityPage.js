@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import ActivityTracker from "../../components/ActivityTracker/ActivityTracker";
 import LogListItem from "../../components/LogListItem/LogListItem";
 import logs from "../../stores/logs-store";
@@ -16,8 +15,6 @@ class ActivityPage extends Component {
         <header className="ActivityPage__header">
           <h1>Screen Time Activity</h1>
           <ActivityTracker />
-          <Link to={"/addlog"}>Add Log</Link>
-          <Link to={"/timer"}>Timer</Link>
         </header>
         <div className="ActivityPage__logs">{this.renderLogs()}</div>
       </div>
