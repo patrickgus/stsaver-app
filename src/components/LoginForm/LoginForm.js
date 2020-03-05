@@ -1,16 +1,44 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+import AuthApiService from "../../services/auth-api-service";
 import "./LoginForm.css";
 
 class LoginForm extends Component {
+  state = { error: null };
+
   handleSubmit = e => {
     e.preventDefault();
-    this.props.history.push("/activity");
+    this.setState({ error: null });
+    const { username, password } = e.target;
+
+    AuthApiService.postLogin({
+      username: username.value,
+      password: password.value
+    })
+      .then(res => {
+        username.value = "";
+        password.value = "";
+        this.props.history.push("/activity");
+      })
+      .catch(res => {
+        this.setState({ error: res.error });
+      });
   };
 
   handleDemoClick = e => {
     e.preventDefault();
-    this.props.history.push("/activity");
+    this.setState({ error: null });
+
+    AuthApiService.postLogin({
+      username: "testuser",
+      password: "Test123!"
+    })
+      .then(res => {
+        this.props.history.push("/activity");
+      })
+      .catch(res => {
+        this.setState({ error: res.error });
+      });
   };
 
   render() {
