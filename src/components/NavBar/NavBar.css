@@ -1,9 +1,8 @@
 .NavBar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
-  background-color: rgba(170, 170, 170, 0.767);
+  padding: 5px 10px;
+  background-color: rgba(170, 170, 170, 0.904);
   position: fixed;
   top: 0;
   left: 0;
@@ -12,6 +11,7 @@
 }
 
 .NavBar h2 {
+  display: inline-block;
   margin: 0;
 }
 
@@ -19,7 +19,30 @@
   text-decoration: none;
 }
 
-.NavBar__not-logged-in {
-  display: flex;
-  flex-direction: column;
+.NavBar__nav-links {
+  text-decoration: none;
+}
+
+.NavBar__main-nav {
+  list-style: none;
+  display: none;
+  margin: 10px 0;
+  padding-top: 12px;
+}
+
+.NavBar__main-nav li {
+  text-align: right;
+  margin: 15px auto;
+}
+
+.NavBar__navbar-toggle {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
 }

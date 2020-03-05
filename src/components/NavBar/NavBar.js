@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TokenService from "../../services/token-service";
 import IdleService from "../../services/idle-service";
 import "./NavBar.css";
@@ -13,34 +14,81 @@ class NavBar extends Component {
     this.props.history.push("/");
   };
 
-  renderLogoutLink() {
+  handleIconClick = () => {
+    let mainNav = document.getElementById("js-menu");
+
+    mainNav.classList.toggle("active");
+  };
+
+  renderLoggedInLinks() {
     return (
-      <div className="NavBar__logged-in">
-        <Link onClick={this.handleLogoutClick} to="/">
-          Logout
-        </Link>
-      </div>
+      <>
+        <li>
+          <Link className="NavBar__nav-links" to="/activity">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className="NavBar__nav-links" to="/addlog">
+            Add Log
+          </Link>
+        </li>
+        <li>
+          <Link className="NavBar__nav-links" to="/timer">
+            Timer
+          </Link>
+        </li>
+        <li>
+          <Link className="NavBar__nav-links" to="/profile">
+            Profile
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="NavBar__nav-links"
+            onClick={this.handleLogoutClick}
+            to="/"
+          >
+            Logout
+          </Link>
+        </li>
+      </>
     );
   }
 
   renderLoginLink() {
     return (
-      <div className="NavBar__not-logged-in">
-        <Link to="/">Login</Link>
-        <Link to="/register">Register</Link>
-      </div>
+      <>
+        <li>
+          <Link className="NavBar__nav-links" to="/">
+            Login
+          </Link>
+        </li>
+        <li>
+          <Link className="NavBar__nav-links" to="/register">
+            Register
+          </Link>
+        </li>
+      </>
     );
   }
 
   render() {
     return (
       <nav className="NavBar">
+        <FontAwesomeIcon
+          onClick={this.handleIconClick}
+          className="NavBar__navbar-toggle"
+          icon="bars"
+        />
         <h2>
           <Link to="/activity">S.T.Saver</Link>
         </h2>
-        {TokenService.hasAuthToken()
-          ? this.renderLogoutLink()
-          : this.renderLoginLink()}
+        <ul className="NavBar__main-nav" id="js-menu">
+          {TokenService.hasAuthToken()
+            ? this.renderLoggedInLinks()
+            : this.renderLoginLink()}
+        </ul>
       </nav>
     );
   }
