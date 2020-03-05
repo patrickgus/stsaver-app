@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { LogListProvider } from "./contexts/LogListContext";
+import { LogProvider } from "./contexts/LogContext";
 import App from "./components/App/App";
 import "normalize.css";
 import "./index.css";
 
 ReactDOM.render(
   <BrowserRouter>
-    <LogListProvider>
+    <LogProvider>
       <App />
-    </LogListProvider>
+    </LogProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );

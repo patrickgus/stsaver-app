@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import LogListContext from "../../contexts/LogListContext";
+import LogContext from "../../contexts/LogContext";
 import LogApiService from "../../services/log-api-service";
 import ActivityTracker from "../../components/ActivityTracker/ActivityTracker";
 import LogListItem from "../../components/LogListItem/LogListItem";
 import "./ActivityPage.css";
 
 class ActivityPage extends Component {
-  static contextType = LogListContext;
+  static contextType = LogContext;
 
   componentDidMount() {
     this.context.clearError();
@@ -30,7 +30,7 @@ class ActivityPage extends Component {
         </header>
         <div className="ActivityPage__logs">
           {error ? (
-            <p className="red">There was an error, try again</p>
+            <p className="error">There was an error, try again</p>
           ) : (
             this.renderLogs()
           )}
