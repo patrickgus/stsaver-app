@@ -14,6 +14,7 @@ const AuthApiService = {
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
     );
   },
+
   postLogin(credentials) {
     return fetch(`${config.API_BASE_URL}/auth/login`, {
       method: "POST",
@@ -34,6 +35,7 @@ const AuthApiService = {
         return res;
       });
   },
+  
   postRefreshToken() {
     return fetch(`${config.API_BASE_URL}/auth/refresh`, {
       method: "POST",
