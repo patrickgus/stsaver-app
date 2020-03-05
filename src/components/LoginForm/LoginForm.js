@@ -42,11 +42,13 @@ class LoginForm extends Component {
   };
 
   render() {
+    const { error } = this.state;
     return (
       <form className="LoginForm" onSubmit={this.handleSubmit}>
         <div className="LoginForm__header">
           <h2>Login Here</h2>
         </div>
+        <div role="alert">{error && <p className="error">{error}</p>}</div>
         <div className="LoginForm__form-section">
           <label htmlFor="username">Username</label>
           <input type="text" name="username" id="username" />
