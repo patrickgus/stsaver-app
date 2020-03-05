@@ -10,6 +10,24 @@ exports[`App component renders the UI as expected 1`] = `
     <nav
       className="NavBar"
     >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-bars fa-w-14 NavBar__navbar-toggle"
+        data-icon="bars"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
       <h2>
         <a
           href="/activity"
@@ -18,22 +36,29 @@ exports[`App component renders the UI as expected 1`] = `
           S.T.Saver
         </a>
       </h2>
-      <div
-        className="NavBar__not-logged-in"
+      <ul
+        className="NavBar__main-nav"
+        id="js-menu"
       >
-        <a
-          href="/"
-          onClick={[Function]}
-        >
-          Login
-        </a>
-        <a
-          href="/register"
-          onClick={[Function]}
-        >
-          Register
-        </a>
-      </div>
+        <li>
+          <a
+            className="NavBar__nav-links"
+            href="/"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+        <li>
+          <a
+            className="NavBar__nav-links"
+            href="/register"
+            onClick={[Function]}
+          >
+            Register
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main
@@ -62,6 +87,9 @@ exports[`App component renders the UI as expected 1`] = `
                 Login Here
               </h2>
             </div>
+            <div
+              role="alert"
+            />
             <div
               className="LoginForm__form-section"
             >

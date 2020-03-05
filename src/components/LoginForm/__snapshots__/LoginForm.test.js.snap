@@ -13,6 +13,9 @@ exports[`LoginForm component renders the form as expected 1`] = `
     </h2>
   </div>
   <div
+    role="alert"
+  />
+  <div
     className="LoginForm__form-section"
   >
     <label

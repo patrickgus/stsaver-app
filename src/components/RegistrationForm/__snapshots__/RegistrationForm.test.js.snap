@@ -6,6 +6,9 @@ exports[`RegistrationForm component renders the form as expected 1`] = `
   onSubmit={[Function]}
 >
   <div
+    role="alert"
+  />
+  <div
     className="RegistrationForm__form-section"
   >
     <label
