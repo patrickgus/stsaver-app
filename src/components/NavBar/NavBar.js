@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import TokenService from "../../services/token-service";
 import IdleService from "../../services/idle-service";
 import "./NavBar.css";
@@ -79,7 +80,7 @@ class NavBar extends Component {
         <FontAwesomeIcon
           onClick={this.handleIconClick}
           className="NavBar__navbar-toggle"
-          icon="bars"
+          icon={faBars}
         />
         <h2>
           <Link to="/activity">S.T.Saver</Link>
