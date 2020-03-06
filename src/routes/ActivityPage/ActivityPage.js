@@ -6,11 +6,17 @@ import LogListItem from "../../components/LogListItem/LogListItem";
 import "./ActivityPage.css";
 
 class ActivityPage extends Component {
+  static defaultProps = {
+    match: { params: {} }
+  };
+
   static contextType = LogContext;
 
   componentDidMount() {
+    const { userId } = this.props.match.params;
+    
     this.context.clearError();
-    LogApiService.getLogs()
+    LogApiService.getLogs(userId)
       .then(this.context.setLogList)
       .catch(this.context.setError);
   }
