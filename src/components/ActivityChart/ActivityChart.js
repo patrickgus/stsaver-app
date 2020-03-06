@@ -4,16 +4,18 @@ import { VictoryChart, VictoryLine, VictoryAxis } from "victory";
 
 function ActivityChart(props) {
   const data = props.logs.map(log => ({
-    date:  format(new Date(log.start_time), "MM-dd-yyyy"),
+    date: format(new Date(log.start_time), "iii M/dd"),
     hours: log.hours
   }));
 
+  const dates = props.logs.map(log =>
+    format(new Date(log.start_time), "iii M/dd")
+  );
+
   return (
     <div className="ActivityChart">
-      <VictoryChart domainPadding={10}>
-        <VictoryAxis
-          tickValues={["02-24-2020", "02-25-2020", "02-26-2020", "03-04-2020"]}
-        />
+      <VictoryChart>
+        <VictoryAxis tickValues={dates} />
         <VictoryAxis dependentAxis tickFormat={[0, 2, 4, 6, 8, 10]} />
         <VictoryLine data={data} x={"date"} y={"hours"} />
       </VictoryChart>
