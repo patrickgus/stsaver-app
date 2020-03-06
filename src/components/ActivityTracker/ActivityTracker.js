@@ -1,18 +1,10 @@
 import React, { Component } from "react";
 import LogContext from "../../contexts/LogContext";
-import LogApiService from "../../services/log-api-service";
 import ActivityChart from "../ActivityChart/ActivityChart";
 import "./ActivityTracker.css";
 
 class ActivityTracker extends Component {
   static contextType = LogContext;
-
-  componentDidMount() {
-    this.context.clearError();
-    LogApiService.getLogs()
-      .then(this.context.setLogList)
-      .catch(this.context.setError);
-  }
 
   render() {
     const { logList } =this.context;
