@@ -19,6 +19,9 @@ class ActivityPage extends Component {
     LogApiService.getLogs(userId)
       .then(this.context.setLogList)
       .catch(this.context.setError);
+    LogApiService.getTotalHours(userId)
+      .then(this.context.setTotalHours)
+      .catch(this.context.setError);
   }
 
   renderLogs = () => {
