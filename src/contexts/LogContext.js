@@ -7,7 +7,8 @@ const LogContext = React.createContext({
   setError: () => {},
   clearError: () => {},
   setLogList: () => {},
-  setTotalHours: () => {}
+  setTotalHours: () => {},
+  addLog: () => {}
 });
 
 export default LogContext;
@@ -36,6 +37,10 @@ export class LogProvider extends Component {
     this.setState({ error: null });
   };
 
+  addLog = log => {
+    this.setLogList([...this.state.logList, log]);
+  };
+
   render() {
     const value = {
       logList: this.state.logList,
@@ -44,7 +49,8 @@ export class LogProvider extends Component {
       setError: this.setError,
       clearError: this.clearError,
       setLogList: this.setLogList,
-      setTotalHours: this.setTotalHours
+      setTotalHours: this.setTotalHours,
+      addLog: this.addLog
     };
     return (
       <LogContext.Provider value={value}>
