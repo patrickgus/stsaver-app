@@ -18,7 +18,7 @@ class LoginForm extends Component {
       .then(res => {
         username.value = "";
         password.value = "";
-        this.props.history.push("/activity");
+        this.props.history.push(`/activity/${res.userId}`);
       })
       .catch(res => {
         this.setState({ error: res.error });
@@ -28,13 +28,13 @@ class LoginForm extends Component {
   handleDemoClick = e => {
     e.preventDefault();
     this.setState({ error: null });
-
+    
     AuthApiService.postLogin({
       username: "testuser",
       password: "Test123!"
     })
       .then(res => {
-        this.props.history.push("/activity");
+        this.props.history.push(`/activity/${res.userId}`);
       })
       .catch(res => {
         this.setState({ error: res.error });
