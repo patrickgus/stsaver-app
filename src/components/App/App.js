@@ -54,8 +54,8 @@ class App extends Component {
           <Switch>
             <Route exact path={"/"} component={LandingPage} />
             <PublicOnlyRoute path={"/register"} component={RegistrationPage} />
-            <PrivateRoute path={"/activity"} component={ActivityPage} />
-            <PrivateRoute path={"/addlog"} component={AddLogPage} />
+            <PrivateRoute path={"/activity/:userId"} component={ActivityPage} />
+            <PrivateRoute path={"/addlog/:userId"} component={AddLogPage} />
             <PrivateRoute path={"/timer"} component={TimerPage} />
           </Switch>
         </main>
