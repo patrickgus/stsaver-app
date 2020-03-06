@@ -14,7 +14,7 @@ function ActivityChart(props) {
 
   return (
     <div className="ActivityChart">
-      <VictoryChart>
+      <VictoryChart domainPadding={5}>
         <VictoryAxis tickValues={dates} />
         <VictoryAxis dependentAxis tickFormat={[0, 2, 4, 6, 8, 10]} />
         <VictoryLabel text="Hours" x={0} y={12} textAnchor="start" />
