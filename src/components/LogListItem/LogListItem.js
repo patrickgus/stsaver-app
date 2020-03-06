@@ -1,5 +1,5 @@
 import React from "react";
-import Moment from "react-moment";
+import { format } from "date-fns";
 import "./LogListItem.css";
 
 function LogListItem(props) {
@@ -7,9 +7,9 @@ function LogListItem(props) {
 
   return (
     <section className="LogListItem">
-      <h3><Moment date={log.start_time} format="MM-DD-YYYY" /></h3>
+      <h3>{format(new Date(log.start_time),"MM-dd-yyyy")}</h3>
       <p>
-        <Moment local date={log.start_time} format="h:mma" /> - <Moment local date={log.end_time} format="h:mma" />
+        {format(new Date(log.start_time),"h:mma")} - {format(new Date(log.end_time),"h:mma")}
       </p>
       <dl>
         <dt>Screen time hours:</dt>
