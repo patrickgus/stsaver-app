@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import LogContext from "../../contexts/LogContext";
 import TokenService from "../../services/token-service";
 import LoginForm from "../../components/LoginForm/LoginForm";
 import "./LandingPage.css";
 
 class LandingPage extends Component {
+  static contextType = LogContext;
+
   renderLoggedIn = () => {
+    const { userId } = this.context;
     return (
       <div className="LandingPage__logged-in">
         <h3>You are already logged in</h3>
-        <Link to="/activity">To Activity Page</Link>
+        <Link to={`/activity/${userId}`}>To Activity Page</Link>
       </div>
     );
   };
