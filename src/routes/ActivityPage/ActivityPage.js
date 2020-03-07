@@ -14,7 +14,7 @@ class ActivityPage extends Component {
 
   componentDidMount() {
     const { userId } = this.props.match.params;
-    
+
     this.context.clearError();
     LogApiService.getLogs(userId)
       .then(this.context.setLogList)
@@ -22,6 +22,7 @@ class ActivityPage extends Component {
     LogApiService.getTotalHours(userId)
       .then(this.context.setTotalHours)
       .catch(this.context.setError);
+    this.context.setUserId(userId);
   }
 
   renderLogs = () => {

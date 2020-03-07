@@ -3,6 +3,7 @@ import React, { Component } from "react";
 const LogContext = React.createContext({
   LogList: [],
   totalHours: {},
+  userId: {},
   error: null,
   setError: () => {},
   clearError: () => {},
@@ -17,6 +18,7 @@ export class LogProvider extends Component {
   state = {
     logList: [],
     totalHours: {},
+    userId: {},
     error: null
   };
 
@@ -26,6 +28,10 @@ export class LogProvider extends Component {
 
   setTotalHours = totalHours => {
     this.setState({ totalHours });
+  };
+
+  setUserId = userId => {
+    this.setState({ userId });
   };
 
   setError = error => {
@@ -45,11 +51,13 @@ export class LogProvider extends Component {
     const value = {
       logList: this.state.logList,
       totalHours: this.state.totalHours,
+      userId: this.state.userId,
       error: this.state.error,
       setError: this.setError,
       clearError: this.clearError,
       setLogList: this.setLogList,
       setTotalHours: this.setTotalHours,
+      setUserId: this.setUserId,
       addLog: this.addLog
     };
     return (
