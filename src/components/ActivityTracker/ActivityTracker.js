@@ -24,10 +24,6 @@ class ActivityTracker extends Component {
               totalHours.sum
             )}
           </dd>
-          <dt>This week:</dt>
-          <dd>12</dd>
-          <dt>Weekly goal:</dt>
-          <dd>50</dd>
         </dl>
       </div>
     );
