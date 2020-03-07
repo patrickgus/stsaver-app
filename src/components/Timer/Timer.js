@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Timer.css";
 
 function Timer() {
@@ -11,7 +10,6 @@ function Timer() {
         <button>Stop</button>
         <button>Reset</button>
       </div>
-      <Link to={"/activity"}>Back</Link>
     </section>
   );
 }
