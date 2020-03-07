@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import LogContext from "../../contexts/LogContext";
+import "./ProfilePage.css";
 
 class ProfilePage extends Component {
   static contextType = LogContext;
