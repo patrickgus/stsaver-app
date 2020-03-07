@@ -34,8 +34,10 @@ class AddLogForm extends Component {
   };
 
   render() {
+    const { error } = this.context;
     return (
       <form className="AddLogForm" onSubmit={this.handleSubmit}>
+        <div role="alert">{error && <p className="error">{error}</p>}</div>
         <div className="AddLogForm__form-section">
           <label htmlFor="start_time">Start time</label>
           <input

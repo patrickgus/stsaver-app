@@ -51,6 +51,7 @@ class App extends Component {
           <NavBar />
         </header>
         <main className="App__main">
+          {this.state.hasError && <p className="error">There was an error!</p>}
           <Switch>
             <Route exact path={"/"} component={LandingPage} />
             <PublicOnlyRoute path={"/register"} component={RegistrationPage} />
