@@ -24,6 +24,7 @@ exports[`LoginForm component renders the form as expected 1`] = `
       Username
     </label>
     <input
+      className="Input "
       id="username"
       name="username"
       type="text"
@@ -38,6 +39,7 @@ exports[`LoginForm component renders the form as expected 1`] = `
       Password
     </label>
     <input
+      className="Input "
       id="password"
       name="password"
       type="password"
@@ -47,12 +49,13 @@ exports[`LoginForm component renders the form as expected 1`] = `
     className="LoginForm__buttons"
   >
     <button
+      className="Button "
       type="submit"
     >
       Login
     </button>
     <button
-      className="LoginForm__demo"
+      className="Button LoginForm__demo"
       onClick={[Function]}
     >
       Demo

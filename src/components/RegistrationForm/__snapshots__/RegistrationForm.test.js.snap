@@ -14,9 +14,15 @@ exports[`RegistrationForm component renders the form as expected 1`] = `
     <label
       htmlFor="first_name"
     >
-      First name
+      First name 
+      <span
+        className="Required "
+      >
+        *
+      </span>
     </label>
     <input
+      className="Input "
       id="first_name"
       name="first_name"
       required={true}
@@ -29,9 +35,15 @@ exports[`RegistrationForm component renders the form as expected 1`] = `
     <label
       htmlFor="last_name"
     >
-      Last name
+      Last name 
+      <span
+        className="Required "
+      >
+        *
+      </span>
     </label>
     <input
+      className="Input "
       id="last_name"
       name="last_name"
       required={true}
@@ -44,9 +56,15 @@ exports[`RegistrationForm component renders the form as expected 1`] = `
     <label
       htmlFor="username"
     >
-      Username
+      Username 
+      <span
+        className="Required "
+      >
+        *
+      </span>
     </label>
     <input
+      className="Input "
       id="username"
       name="username"
       required={true}
@@ -59,9 +77,15 @@ exports[`RegistrationForm component renders the form as expected 1`] = `
     <label
       htmlFor="password"
     >
-      Password
+      Password 
+      <span
+        className="Required "
+      >
+        *
+      </span>
     </label>
     <input
+      className="Input "
       id="password"
       name="password"
       required={true}
@@ -72,11 +96,13 @@ exports[`RegistrationForm component renders the form as expected 1`] = `
     className="RegistrationForm__buttons"
   >
     <button
+      className="Button "
       type="submit"
     >
       Register
     </button>
     <button
+      className="Button "
       onClick={[Function]}
     >
       Cancel

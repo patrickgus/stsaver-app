@@ -9,54 +9,60 @@ exports[`AddLogForm component renders the UI as expected 1`] = `
     className="AddLogForm__form-section"
   >
     <label
-      htmlFor="date"
+      htmlFor="start_time"
     >
-      Date
+      Start time 
+      <span
+        className="Required "
+      >
+        *
+      </span>
     </label>
     <input
-      id="date"
-      name="date"
+      className="Input "
+      id="start_time"
+      name="start_time"
       required={true}
-      type="date"
-    />
-  </div>
-  <div
-    className="AddLogForm__form-section times"
-  >
-    <label
-      htmlFor="start-time"
-    >
-      Start time
-    </label>
-    <input
-      id="start-time"
-      name="start-time"
-      required={true}
-      type="time"
-    />
-    <label
-      htmlFor="end-time"
-    >
-      End time
-    </label>
-    <input
-      id="end-time"
-      name="end-time"
-      required={true}
-      type="time"
+      type="datetime-local"
     />
   </div>
   <div
     className="AddLogForm__form-section"
   >
     <label
-      htmlFor="media-type"
+      htmlFor="end_time"
     >
-      Media type
+      End time 
+      <span
+        className="Required "
+      >
+        *
+      </span>
+    </label>
+    <input
+      className="Input "
+      id="end_time"
+      name="end_time"
+      required={true}
+      type="datetime-local"
+    />
+  </div>
+  <div
+    className="AddLogForm__form-section"
+  >
+    <label
+      htmlFor="media"
+    >
+      Media type 
+      <span
+        className="Required "
+      >
+        *
+      </span>
     </label>
     <select
-      id="media-type"
-      name="media-type"
+      id="media"
+      name="media"
       required={true}
     >
       <option
@@ -92,9 +98,15 @@ exports[`AddLogForm component renders the UI as expected 1`] = `
     <label
       htmlFor="breaks"
     >
-      Number of breaks
+      Number of breaks 
+      <span
+        className="Required "
+      >
+        *
+      </span>
     </label>
     <input
+      className="Input "
       id="breaks"
       name="breaks"
       required={true}
@@ -105,11 +117,13 @@ exports[`AddLogForm component renders the UI as expected 1`] = `
     className="AddLogForm__buttons"
   >
     <button
+      className="Button "
       type="submit"
     >
       Submit
     </button>
     <button
+      className="Button "
       onClick={[Function]}
     >
       Cancel
