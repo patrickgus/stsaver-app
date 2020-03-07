@@ -8,8 +8,6 @@ class ActivityTracker extends Component {
 
   render() {
     const { error, logList, totalHours } = this.context;
-    console.log(totalHours[0]);
-    
     return (
       <div className="ActivityTracker">
         <h2>Activity Tracker</h2>
