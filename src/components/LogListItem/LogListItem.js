@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { format } from "date-fns";
+import { Button } from "../Utils/Utils";
 import LogApiService from "../../services/log-api-service";
 import LogContext from "../../contexts/LogContext";
 import "./LogListItem.css";
@@ -32,8 +33,8 @@ class LogListItem extends Component {
           <dd>{log.breaks}</dd>
         </dl>
         <div className="LogListItem__buttons">
-          <button>Edit</button>
-          <button onClick={this.handleDelete}>Delete</button>
+          <Button>Edit</Button>
+          <Button onClick={this.handleDelete}>Delete</Button>
         </div>
       </section>
     );

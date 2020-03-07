@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+import { Input, Button } from "../Utils/Utils";
 import AuthApiService from "../../services/auth-api-service";
 import "./LoginForm.css";
 
@@ -51,17 +52,17 @@ class LoginForm extends Component {
         <div role="alert">{error && <p className="error">{error}</p>}</div>
         <div className="LoginForm__form-section">
           <label htmlFor="username">Username</label>
-          <input type="text" name="username" id="username" />
+          <Input type="text" name="username" id="username" />
         </div>
         <div className="LoginForm__form-section">
           <label htmlFor="password">Password</label>
-          <input name="password" type="password" id="password" />
+          <Input name="password" type="password" id="password" />
         </div>
         <div className="LoginForm__buttons">
-          <button type="submit">Login</button>
-          <button className="LoginForm__demo" onClick={this.handleDemoClick}>
+          <Button type="submit">Login</Button>
+          <Button className="LoginForm__demo" onClick={this.handleDemoClick}>
             Demo
-          </button>
+          </Button>
         </div>
       </form>
     );

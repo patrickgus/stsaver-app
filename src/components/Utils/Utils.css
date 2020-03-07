@@ -3,8 +3,7 @@
   margin: 0 5px;
 }
 
-.Input,
-.Textarea {
+.Input {
   border: 1px solid rgb(221, 221, 221);
   display: block;
   font-size: 1.1em;
@@ -15,18 +14,13 @@
   border-radius: 4px;
 }
 
-.Input::placeholder,
-.Textarea::placeholder {
+.Input::placeholder {
   color: rgba(104, 103, 103, 0.8);
 }
 
-.Textarea {
-  resize: vertical;
-}
-
 .Button {
-  background-color: rgb(234, 0, 255);
-  border-color: rgb(194, 68, 194);
+  background-color: rgb(221, 221, 221);
+  border-color: rgb(170, 163, 163);
   font-size: 1.1em;
   border-radius: 4px;
   padding: 8px 12px;
@@ -35,18 +29,11 @@
 }
 
 .Button:hover {
-  background-color: rgb(139, 0, 151);
+  background-color: rgb(148, 148, 148);
 }
 
 .Required {
   color: #ca1551;
   font-family: Arial;
   font-weight: bold;
-}
-
-.Section {
-  margin: 0 20px;
-}
-.Section--list {
-  margin: 0 10px;
 }

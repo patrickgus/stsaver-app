@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+import { Input, Button, Required } from "../Utils/Utils";
 import LogContext from "../../contexts/LogContext";
 import LogApiService from "../../services/log-api-service";
 import "./AddLogForm.css";
@@ -41,8 +42,10 @@ class AddLogForm extends Component {
     return (
       <form className="AddLogForm" onSubmit={this.handleSubmit}>
         <div className="AddLogForm__form-section">
-          <label htmlFor="start_time">Start time</label>
-          <input
+          <label htmlFor="start_time">
+            Start time <Required />
+          </label>
+          <Input
             type="datetime-local"
             name="start_time"
             id="start_time"
@@ -50,11 +53,15 @@ class AddLogForm extends Component {
           />
         </div>
         <div className="AddLogForm__form-section">
-          <label htmlFor="end_time">End time</label>
-          <input type="datetime-local" name="end_time" id="end_time" required />
+          <label htmlFor="end_time">
+            End time <Required />
+          </label>
+          <Input type="datetime-local" name="end_time" id="end_time" required />
         </div>
         <div className="AddLogForm__form-section">
-          <label htmlFor="media">Media type</label>
+          <label htmlFor="media">
+            Media type <Required />
+          </label>
           <select name="media" id="media" required>
             <option value="">--Choose one--</option>
             <option value="computer">Computer</option>
@@ -64,12 +71,14 @@ class AddLogForm extends Component {
           </select>
         </div>
         <div className="AddLogForm__form-section">
-          <label htmlFor="breaks">Number of breaks</label>
-          <input type="number" name="breaks" id="breaks" required />
+          <label htmlFor="breaks">
+            Number of breaks <Required />
+          </label>
+          <Input type="number" name="breaks" id="breaks" required />
         </div>
         <div className="AddLogForm__buttons">
-          <button type="submit">Submit</button>
-          <button onClick={this.handleCancel}>Cancel</button>
+          <Button type="submit">Submit</Button>
+          <Button onClick={this.handleCancel}>Cancel</Button>
         </div>
       </form>
     );
