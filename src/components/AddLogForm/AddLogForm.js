@@ -10,8 +10,10 @@ class AddLogForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const { start_time, end_time, media, breaks } = e.target;
+    const { userId } = this.context;
 
     LogApiService.postLog(
+      userId,
       start_time.value,
       end_time.value,
       media.value,
@@ -23,21 +25,21 @@ class AddLogForm extends Component {
         end_time.value = "";
         media.value = "";
         breaks.value = "";
-        this.props.history.push("/activity");
+        this.props.history.push(`/activity/${userId}`);
       })
       .catch(this.context.setError);
   };
 
   handleCancel = e => {
     e.preventDefault();
-    this.props.history.push("/activity");
+    const { userId } = this.context;
+
+    this.props.history.push(`/activity/${userId}`);
   };
 
   render() {
-    const { error } = this.context;
     return (
       <form className="AddLogForm" onSubmit={this.handleSubmit}>
-        <div role="alert">{error && <p className="error">{error}</p>}</div>
         <div className="AddLogForm__form-section">
           <label htmlFor="start_time">Start time</label>
           <input
