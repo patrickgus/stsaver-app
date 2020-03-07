@@ -40,24 +40,18 @@ const LogApiService = {
     return fetch(`${config.API_BASE_URL}/logs/${userId}/${logId}`, {
       method: "DELETE",
       headers: { authorization: `bearer ${TokenService.getAuthToken()}` }
-    }).then(res =>
-      !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
-    );
+    }).then(res => (!res.ok ? e => Promise.reject(e) : res.ok));
   },
 
   updateLog(userId, logId, start_time, end_time, media, breaks) {
+    const logEntry = { start_time, end_time, media, breaks };
     return fetch(`${config.API_BASE_URL}/logs/${userId}/${logId}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
         authorization: `bearer ${TokenService.getAuthToken()}`
       },
-      body: JSON.stringify({
-        start_time,
-        end_time,
-        media,
-        breaks
-      })
+      body: JSON.stringify(logEntry)
     }).then(res =>
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
     );
