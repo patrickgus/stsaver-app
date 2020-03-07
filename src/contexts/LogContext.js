@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 const LogContext = React.createContext({
   LogList: [],
-  totalHours: "",
+  totalHours: {},
   error: null,
   setError: () => {},
   clearError: () => {},
@@ -16,7 +16,7 @@ export default LogContext;
 export class LogProvider extends Component {
   state = {
     logList: [],
-    totalHours: "",
+    totalHours: {},
     error: null
   };
 
