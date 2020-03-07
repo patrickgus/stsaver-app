@@ -4,9 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import TokenService from "../../services/token-service";
 import IdleService from "../../services/idle-service";
+import LogContext from "../../contexts/LogContext";
 import "./NavBar.css";
 
 class NavBar extends Component {
+  static contextType = LogContext;
+
   handleLogoutClick = () => {
     TokenService.clearAuthToken();
     TokenService.clearCallbackBeforeExpiry();
@@ -22,25 +25,26 @@ class NavBar extends Component {
   };
 
   renderLoggedInLinks() {
+    const { userId } = this.context;
     return (
       <>
         <li>
-          <Link className="NavBar__nav-links" to="/activity">
+          <Link className="NavBar__nav-links" to={`/activity/${userId}`}>
             Home
           </Link>
         </li>
         <li>
-          <Link className="NavBar__nav-links" to="/addlog">
+          <Link className="NavBar__nav-links" to={`/addlog/${userId}`}>
             Add Log
           </Link>
         </li>
         <li>
-          <Link className="NavBar__nav-links" to="/timer">
+          <Link className="NavBar__nav-links" to={`/timer/${userId}`}>
             Timer
           </Link>
         </li>
         <li>
-          <Link className="NavBar__nav-links" to="/profile">
+          <Link className="NavBar__nav-links" to={`/profile/${userId}`}>
             Profile
           </Link>
         </li>
