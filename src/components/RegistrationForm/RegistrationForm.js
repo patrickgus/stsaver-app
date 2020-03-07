@@ -16,17 +16,22 @@ class RegistrationForm extends Component {
       password: password.value,
       first_name: first_name.value,
       last_name: last_name.value
-    })
-      .then(user => {
-        first_name.value = "";
-        last_name.value = "";
-        username.value = "";
-        password.value = "";
-        this.props.history.push("/activity");
+    }).then(user => {
+      AuthApiService.postLogin({
+        username: user.username,
+        password: password.value
       })
-      .catch(res => {
-        this.setState({ error: res.error });
-      });
+        .then(res => {
+          username.value = "";
+          password.value = "";
+          first_name.value = "";
+          last_name.value = "";
+          this.props.history.push(`/activity/${res.userId}`);
+        })
+        .catch(res => {
+          this.setState({ error: res.error });
+        });
+    });
   };
 
   handleCancel = e => {
