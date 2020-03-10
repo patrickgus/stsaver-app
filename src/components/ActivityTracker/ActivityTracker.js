@@ -16,7 +16,7 @@ class ActivityTracker extends Component {
 
     return (
       <div className="ActivityTracker">
-        <h2>Activity Tracker</h2>
+        <h3>Activity from the past 7 days</h3>
         <div className="ActivityTracker__chart">
           <ActivityChart logs={filteredList} />
         </div>
