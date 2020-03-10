@@ -1,5 +1,5 @@
 .Hyph {
-  color: rgb(0, 224, 224);
+  color: rgb(0, 0, 0);
   margin: 0 5px;
 }
 
@@ -19,8 +19,8 @@
 }
 
 .Button {
-  background-color: rgb(221, 221, 221);
-  border-color: rgb(170, 163, 163);
+  background-color: rgba(114, 189, 233);
+  border-color: rgb(92, 161, 201);
   font-size: 1.1em;
   border-radius: 4px;
   padding: 8px 12px;
@@ -29,7 +29,7 @@
 }
 
 .Button:hover {
-  background-color: rgb(148, 148, 148);
+  background-color: rgb(91, 151, 185);
 }
 
 .Required {
