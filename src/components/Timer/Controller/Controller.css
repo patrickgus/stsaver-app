@@ -8,9 +8,9 @@
 .controller button {
   font-size: 1.1rem;
   font-weight: 700;
-  border: 1px solid #4ebfc9;
+  border: 1px solid rgb(114, 189, 233);
   background-color: transparent;
-  color: #fff;
+  color: rgb(0, 0, 0);
   border-radius: 6px;
   outline: none;
   width: 85px;
@@ -27,5 +27,5 @@
 
 .controller button:hover {
   cursor: pointer;
-  background-color: #4ebfc9;
+  background-color: rgb(114, 189, 233);
 }

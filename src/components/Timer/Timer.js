@@ -117,10 +117,6 @@ export default class App extends Component {
   render() {
     return (
       <div className="pomodoro-clock">
-        <div className="pomodoro-clock-header">
-          <h1 className="pomodoro-clock-header-name">pomodoro clock</h1>
-        </div>
-
         <Settings
           breakLength={this.state.breakLength}
           sessionLength={this.state.sessionLength}
@@ -130,18 +126,15 @@ export default class App extends Component {
           onIncreaseBreak={this.onIncreaseBreak}
           onIncreaseSession={this.onIncreaseSession}
         />
-
         <Times
           timeLabel={this.state.timeLabel}
           timeLeftInSecond={this.state.timeLeftInSecond}
         />
-
         <Controller
           onReset={this.onReset}
           onStartStop={this.onStartStop}
           isStart={this.state.isStart}
         />
-
         <audio
           id="beep"
           preload="auto"

@@ -16,9 +16,9 @@
 .settings-section button {
   font-size: 1.1rem;
   font-weight: 700;
-  border: 1px solid #4ebfc9;
+  border: 1px solid rgb(114, 189, 233);
   background-color: transparent;
-  color: #fff;
+  color: rgb(0, 0, 0);
   border-radius: 6px;
   outline: none;
   width: 35px;
@@ -33,7 +33,7 @@
 
 .settings-section button:not(.disable):hover {
   cursor: pointer;
-  background-color: #4ebfc9;
+  background-color: rgb(114, 189, 233);
 }
 
 .settings-section button.disable {
@@ -47,9 +47,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: rgb(211, 211, 211);
   border-radius: 50%;
-  color: #444;
+  color: rgb(0, 0, 0);
   margin-left: 10px;
   margin-right: 10px;
   font-size: 1.1rem;
