@@ -1,7 +1,9 @@
-.App {
-  background-color: rgb(255, 249, 241);
-}
-
 .App__header {
   padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .App {
+    padding-bottom: 30px;
+  }
 }

@@ -72,3 +72,23 @@
     padding-left: 40px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .LandingPage__descriptions-container {
+    width: 950px;
+    border-radius: 10px;
+    border: 1px solid rgb(48, 48, 48);
+  }
+
+  .LandingPage__description {
+    padding: 15px 60px;
+  }
+
+  .LandingPage__description-content {
+    padding-right: 60px;
+  }
+
+  .LandingPage__description-content-2 {
+    padding-left: 60px;
+  }
+}
