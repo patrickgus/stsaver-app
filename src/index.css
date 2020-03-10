@@ -22,16 +22,17 @@ h1,
 h2,
 h3,
 h4 {
+  color: rgb(48, 48, 48);
   margin: 0;
 }
 
 a {
-  color: black;
+  color: rgb(48, 48, 48);
   cursor: pointer;
 }
 
 a:hover {
-  color: rgb(75, 75, 75);
+  color: rgb(102, 102, 102);
 }
 
 section {
