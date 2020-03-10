@@ -30,6 +30,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  color: rgb(75, 75, 75);
+}
+
 section {
   min-height: 200px;
   padding: 30px 15px;
