@@ -9,16 +9,16 @@ class ActivityTracker extends Component {
 
   render() {
     const { error, logList, totalHours } = this.context;
+    const filteredList = logList.filter(log => {
+      const date = new Date(log.start_time);
+      return date >= subDays(new Date(), 6) && date <= new Date();
+    });
+
     return (
       <div className="ActivityTracker">
         <h2>Activity Tracker</h2>
         <div className="ActivityTracker__chart">
-          <ActivityChart
-            logs={logList.filter(log => {
-              const date = new Date(log.start_time);
-              return date >= subDays(new Date(), 6) && date <= new Date();
-            })}
-          />
+          <ActivityChart logs={filteredList} />
         </div>
         <dl className="ActivityTracker__stats">
           <dt>Total Hours:</dt>
