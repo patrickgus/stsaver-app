@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
-  background-color: rgba(170, 170, 170, 0.904);
+  background-color: rgba(114, 189, 233, 0.904);
   position: fixed;
   top: 0;
   left: 0;
@@ -19,8 +19,16 @@
   text-decoration: none;
 }
 
+.NavBar h2 a:hover {
+  color: rgb(75, 75, 75);
+}
+
 .NavBar__nav-links {
   text-decoration: none;
+}
+
+.NavBar__nav-links:hover {
+  color: rgb(75, 75, 75);
 }
 
 .NavBar__main-nav {
@@ -41,6 +49,10 @@
   right: 20px;
   cursor: pointer;
   font-size: 24px;
+}
+
+.NavBar__navbar-toggle:hover {
+  color: rgb(75, 75, 75);
 }
 
 .active {
