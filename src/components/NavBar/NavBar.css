@@ -50,3 +50,37 @@
 .active {
   display: block;
 }
+
+@media screen and (min-width: 1024px) {
+  .NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .NavBar h2 {
+    font-size: 25px;
+  }
+
+  .NavBar__main-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .NavBar__main-nav li {
+    margin: 0;
+  }
+
+  .NavBar__nav-links {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  .NavBar__navbar-toggle {
+    display: none;
+  }
+}
