@@ -11,3 +11,8 @@
 .ActivityTracker__chart {
   width: 250px;
 }
+
+.ActivityTracker__stats dt {
+  font-weight: bold;
+  color: rgb(48, 48, 48);
+}
