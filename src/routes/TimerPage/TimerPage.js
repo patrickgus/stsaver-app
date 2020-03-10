@@ -14,7 +14,7 @@ class TimerPage extends Component {
         <header className="TimerPage__header">
           <h1>Timer</h1>
         </header>
-        <Timer />
+        <Timer defaultBreakLength={5} defaultSessionLength={20} />
         <Link to={`/activity/${userId}`}>Back</Link>
       </div>
     );
