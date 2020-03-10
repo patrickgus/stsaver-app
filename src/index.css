@@ -29,3 +29,13 @@ a {
   color: black;
   cursor: pointer;
 }
+
+section {
+  min-height: 200px;
+  padding: 30px 15px;
+  background-color: rgba(184, 184, 184, 0.247);
+}
+
+section:nth-child(even) {
+  background-color: rgba(129, 129, 129, 0.247);
+}
