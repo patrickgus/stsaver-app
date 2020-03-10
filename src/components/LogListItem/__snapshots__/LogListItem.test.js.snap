@@ -4,9 +4,14 @@ exports[`LogListItem component renders the item as expected 1`] = `
 <section
   className="LogListItem"
 >
-  <h3 />
+  <h3>
+    03-04-2020
+  </h3>
   <p>
-     - 
+    4:00PM
+     -
+     
+    8:00PM
   </p>
   <dl>
     <dt>
@@ -16,19 +21,29 @@ exports[`LogListItem component renders the item as expected 1`] = `
     <dt>
       Media type:
     </dt>
-    <dd />
+    <dd>
+      television
+    </dd>
     <dt>
       Breaks taken:
     </dt>
-    <dd />
+    <dd>
+      0
+    </dd>
   </dl>
   <div
     className="LogListItem__buttons"
   >
-    <button>
+    <button
+      className="Button "
+      onClick={[Function]}
+    >
       Edit
     </button>
-    <button>
+    <button
+      className="Button "
+      onClick={[Function]}
+    >
       Delete
     </button>
   </div>

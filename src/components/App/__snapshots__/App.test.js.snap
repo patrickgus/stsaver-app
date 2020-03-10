@@ -139,42 +139,54 @@ exports[`App component renders the UI as expected 1`] = `
           </form>
         </div>
       </header>
-      <section
-        className="LandingPage__description"
+      <div
+        className="LandingPage__descriptions-container"
       >
-        <h3>
-          Keep track of your screen time
-        </h3>
-        <div
-          className="LandingPage__description-image"
+        <section
+          className="LandingPage__description"
         >
-          <img
-            alt="screenshot of activity page"
-            src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
-          />
-        </div>
-        <p>
-          Keep logs of you screen time sessions and set goals to limit the amount of exposure. Set goals for how much time you spend on your computer, phone, tablet, etc.
-        </p>
-      </section>
-      <section
-        className="LandingPage__description"
-      >
-        <h3>
-          Manage your screen time
-        </h3>
-        <div
-          className="LandingPage__description-image"
+          <div
+            className="LandingPage__description-content"
+          >
+            <h3>
+              Keep track of your screen time
+            </h3>
+            <p>
+              Keep logs of you screen time sessions and set goals to limit the amount of exposure. Track how how much time you spend on your computer, phone, tablet, or television.
+            </p>
+          </div>
+          <div
+            className="LandingPage__description-image"
+          >
+            <img
+              alt="screenshot of activity page"
+              src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+            />
+          </div>
+        </section>
+        <section
+          className="LandingPage__description"
         >
-          <img
-            alt="screenshot of timer page"
-            src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
-          />
-        </div>
-        <p>
-          Set a timer to get a reminder to take a break. A good rule to follow is the 20-20-20 rule, which is to take a break every 20 minutes by looking at an object 20 feet away for 20 seconds.
-        </p>
-      </section>
+          <div
+            className="LandingPage__description-content-2"
+          >
+            <h3>
+              Manage your screen time
+            </h3>
+            <p>
+              Set a timer to get a reminder to take a break. A good rule to follow is the 20-20-20 rule, which is to take a break every 20 minutes by looking at an object 20 feet away for 20 seconds.
+            </p>
+          </div>
+          <div
+            className="LandingPage__description-image"
+          >
+            <img
+              alt="screenshot of timer page"
+              src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+            />
+          </div>
+        </section>
+      </div>
     </div>
   </main>
 </div>

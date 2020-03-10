@@ -5,12 +5,12 @@ import renderer from "react-test-renderer";
 import LogListItem from "./LogListItem";
 import logs from "../../stores/logs-store";
 
-describe("LogListItem component", () => {
+describe.only("LogListItem component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <LogListItem log={logs} />
+        <LogListItem log={logs[0]} />
       </BrowserRouter>,
       div
     );
@@ -21,7 +21,7 @@ describe("LogListItem component", () => {
     const tree = renderer
       .create(
         <BrowserRouter>
-          <LogListItem log={logs} />
+          <LogListItem log={logs[0]} />
         </BrowserRouter>
       )
       .toJSON();
