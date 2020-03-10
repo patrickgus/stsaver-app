@@ -79,6 +79,7 @@ class NavBar extends Component {
   }
 
   render() {
+    const { userId } = this.context;
     return (
       <nav className="NavBar">
         <FontAwesomeIcon
@@ -87,7 +88,7 @@ class NavBar extends Component {
           icon={faBars}
         />
         <h2>
-          <Link to="/activity">S.T.Saver</Link>
+          <Link to={`/activity/${userId}`}>S.T.Saver</Link>
         </h2>
         <ul className="NavBar__main-nav" id="js-menu">
           {TokenService.hasAuthToken()
