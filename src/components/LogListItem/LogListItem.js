@@ -114,7 +114,7 @@ class LogListItem extends Component {
           {format(new Date(log.end_time), "h:mma")}
         </p>
         <dl>
-          <dt>Screen time hours:</dt>
+          <dt>Screen Hours:</dt>
           <dd>{log.hours}</dd>
           <dt>Media type:</dt>
           <dd>{log.media}</dd>
