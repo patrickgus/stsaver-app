@@ -30,7 +30,7 @@ exports[`App component renders the UI as expected 1`] = `
       </svg>
       <h2>
         <a
-          href="/activity"
+          href="/activity/[object Object]"
           onClick={[Function]}
         >
           S.T.Saver
