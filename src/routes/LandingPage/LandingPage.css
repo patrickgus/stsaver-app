@@ -28,9 +28,30 @@
 }
 
 .LandingPage__description-image {
+  padding: 10px 0;
   margin: auto;
 }
 
 .LandingPage__description-image img {
   width: 250px;
+}
+
+@media screen and (min-width: 680px) {
+  .LandingPage__description {
+    flex-direction: row;
+  }
+
+  .LandingPage__description-content {
+    margin: auto;
+    padding-left: 40px;
+  }
+
+  .LandingPage__description:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .LandingPage__description-content-2 {
+    margin: auto;
+    padding-right: 40px;
+  }
 }
