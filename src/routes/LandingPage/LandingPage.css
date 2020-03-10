@@ -19,7 +19,14 @@
 .LandingPage__description {
   display: flex;
   flex-direction: column;
+}
+
+.LandingPage__login {
   padding: 10px 20px;
+}
+
+.LandingPage__description {
+  padding: 15px 30px;
 }
 
 .LandingPage__description h3 {
