@@ -7,3 +7,15 @@
 .ActivityPage__header h1 {
   margin-top: 50px;
 }
+
+.ActivityPage__logs h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+  .ActivityPage__logs {
+    margin: 20px 50px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 8px;
+  }
+}
