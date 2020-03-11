@@ -39,6 +39,7 @@ class ActivityPage extends Component {
           <ActivityTracker />
         </header>
         <div className="ActivityPage__logs">
+          <h2>Logs:</h2>
           {error ? (
             <p className="error">There was an error, try again</p>
           ) : (
