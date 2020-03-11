@@ -1,6 +1,12 @@
 import React from "react";
 import { format } from "date-fns";
-import { VictoryChart, VictoryLine, VictoryAxis, VictoryLabel } from "victory";
+import {
+  VictoryChart,
+  VictoryBar,
+  VictoryTheme,
+  VictoryAxis,
+  VictoryLabel
+} from "victory";
 
 function ActivityChart(props) {
   const data = props.logs.map(log => ({
@@ -14,11 +20,11 @@ function ActivityChart(props) {
 
   return (
     <div className="ActivityChart">
-      <VictoryChart domainPadding={5}>
+      <VictoryChart domainPadding={10} theme={VictoryTheme.material}>
         <VictoryAxis tickValues={dates} />
         <VictoryAxis dependentAxis tickFormat={[0, 2, 4, 6, 8, 10]} />
         <VictoryLabel text="Hours" x={0} y={12} textAnchor="start" />
-        <VictoryLine data={data} x={"date"} y={"hours"} />
+        <VictoryBar data={data} x={"date"} y={"hours"} />
       </VictoryChart>
     </div>
   );
