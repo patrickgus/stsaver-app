@@ -111,10 +111,10 @@ class LogListItem extends Component {
     
     return (
       <>
-        <h3>{format(new Date(log.start_time), "MM-dd-yyyy")}</h3>
+        <h3>{format(log.start_time, "MM-dd-yyyy")}</h3>
         <p>
-          {format(new Date(log.start_time), "h:mma")} -{" "}
-          {format(new Date(log.end_time), "h:mma")}
+          {format(log.start_time, "h:mma")} -{" "}
+          {format(log.end_time, "h:mma")}
         </p>
         <dl>
           <dt>Screen Hours:</dt>
