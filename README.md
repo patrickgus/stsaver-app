@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# STSaver
 
-## Available Scripts
+[Live Page](https://stsaver-app.now.sh/)
 
-In the project directory, you can run:
+[Back End Repo](https://github.com/patrickgus/stsaver-api)
 
-### `npm start`
+## Summary
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+STSaver is a screen-time tracker app where users can log their time looking at a screen whether it be a computer screen, phone screen, tablet screen, or a television screen. Users will be able to see their activity in the past 7 days in an activity bar-chart. There is also a timer where the user will be able to set a time for a work session and a break session and will be alerted by an alarm.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built with:
 
-### `npm test`
+  - React.js
+  - Node.js
+  - Express.js
+  - PostgreSQL
+  - REST API
+  - CSS
+  - HTML
+  - jQuery
+  - Mocha
+  - Chai
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots of the user's journey
 
-### `npm run build`
+To demo the app you can click on the 'demo' button at the bottom of the login form.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Or you could make your own user profile if you like. You would just need to supply your first name, last name, a username, and a protected password.
+_We do not share any personal information with anyone else._
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Landing Page:
+![STSaver-LandingPage](https://user-images.githubusercontent.com/53308172/76572448-59e09e00-6477-11ea-8f3e-ddd21d258942.png)
+If you click on the 'Register' link in the top, right-hand corner of the page, you will be brought to the Registration Page.
+### Registration Page:
+![STSaver-RegistrationPage](https://user-images.githubusercontent.com/53308172/76572479-6ebd3180-6477-11ea-9472-16f3d4966fae.png)
+If you successfully log in with a correct username and password, you will be brought to the Activity page.
+### Activity Page:
+![STSaver-ActivityPage](https://user-images.githubusercontent.com/53308172/76572521-8694b580-6477-11ea-8191-8da4fda8cc4d.png)
+Clicking on 'Add Log' in the top navigation menu will let you add a new log to your Activity page.
+### Add Log Page:
+![STSaver-AddLogPage](https://user-images.githubusercontent.com/53308172/76572591-b5ab2700-6477-11ea-9035-b24f854e5653.png)
+Clicking on 'Timer' in the top navigation menu will bring you to the Timer page.
+### Timer Page:
+![STSaver-TimerPage](https://user-images.githubusercontent.com/53308172/76572644-e1c6a800-6477-11ea-8c5e-788a6b1ef45a.png)
+Here you can set a timer for your work session and break session.
+## API Docs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+GET, POST, DELETE, and PATCH fetch requests are made via RESTful API.
 
-### `npm run eject`
+Base API URL is 'https://obscure-oasis-82471.herokuapp.com/api'
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Endpoints:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  - '/logs'
+  - '/users'
+  - '/auth'
