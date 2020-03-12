@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import LogContext from "../../contexts/LogContext";
 import TokenService from "../../services/token-service";
 import LoginForm from "../../components/LoginForm/LoginForm";
+import ActivityPageImg from "../../images/STSaver-activity-page.png";
+import TimerPageImg from "../../images/STSaver-timer-page.png";
 import "./LandingPage.css";
 
 class LandingPage extends Component {
@@ -39,15 +41,12 @@ class LandingPage extends Component {
               <h3>Keep track of your screen time</h3>
               <p>
                 Keep logs of you screen time sessions and set goals to limit the
-                amount of exposure. Track how how much time you spend on
-                your computer, phone, tablet, or television.
+                amount of exposure. Track how how much time you spend on your
+                computer, phone, tablet, or television.
               </p>
             </div>
             <div className="LandingPage__description-image">
-              <img
-                src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
-                alt="screenshot of activity page"
-              />
+              <img src={ActivityPageImg} alt="screenshot of activity page" />
             </div>
           </section>
 
@@ -61,10 +60,7 @@ class LandingPage extends Component {
               </p>
             </div>
             <div className="LandingPage__description-image">
-              <img
-                src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
-                alt="screenshot of timer page"
-              />
+              <img src={TimerPageImg} alt="screenshot of timer page" />
             </div>
           </section>
         </div>
