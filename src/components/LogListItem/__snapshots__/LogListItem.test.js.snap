@@ -35,7 +35,7 @@ exports[`LogListItem component renders the item as expected 1`] = `
     className="LogListItem__buttons"
   >
     <button
-      className="Button "
+      className="Button edit"
       onClick={[Function]}
     >
       Edit

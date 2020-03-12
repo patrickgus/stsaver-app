@@ -160,7 +160,7 @@ exports[`App component renders the UI as expected 1`] = `
           >
             <img
               alt="screenshot of activity page"
-              src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+              src="STSaver-activity-page.png"
             />
           </div>
         </section>
@@ -182,7 +182,7 @@ exports[`App component renders the UI as expected 1`] = `
           >
             <img
               alt="screenshot of timer page"
-              src="https://www.ajactraining.org/wp-content/uploads/2019/09/image-placeholder.jpg"
+              src="STSaver-timer-page.png"
             />
           </div>
         </section>
