@@ -23,7 +23,10 @@
   padding-bottom: 5px;
 }
 
+.edit {
+  margin-right: 20px;
+}
+
 .LogListItem__buttons button {
   width: 80px;
-  margin-right: 10px;
 }

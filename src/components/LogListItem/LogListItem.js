@@ -122,7 +122,7 @@ class LogListItem extends Component {
           <dd>{log.breaks}</dd>
         </dl>
         <div className="LogListItem__buttons">
-          <Button onClick={this.handleEdit}>Edit</Button>
+          <Button className="edit" onClick={this.handleEdit}>Edit</Button>
           <Button onClick={this.handleDelete}>Delete</Button>
         </div>
       </>
