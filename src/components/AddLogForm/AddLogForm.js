@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+import { format } from "date-fns";
 import { Input, Button, Required } from "../Utils/Utils";
 import LogContext from "../../contexts/LogContext";
 import LogApiService from "../../services/log-api-service";
@@ -12,12 +13,14 @@ class AddLogForm extends Component {
     e.preventDefault();
     const { start_time, end_time, media, breaks } = e.target;
     const { userId } = this.context;
-    console.log("newLog", start_time.value);
+    const start = format(new Date(start_time.value), "yyyy-MM-dd'T'HH:mm");
+    const end = format(new Date(end_time.value), "yyyy-MM-dd'T'HH:mm");
+    console.log("newLog", start);
     
     LogApiService.postLog(
       userId,
-      start_time.value,
-      end_time.value,
+      start,
+      end,
       media.value,
       breaks.value
     )
