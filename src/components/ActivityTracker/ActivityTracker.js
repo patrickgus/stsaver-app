@@ -11,7 +11,7 @@ class ActivityTracker extends Component {
     const { error, logList, totalHours } = this.context;
     const filteredList = logList.filter(log => {
       const date = new Date(log.start_time);
-      return date >= subDays(new Date(), 6) && date <= new Date();
+      return date >= subDays(new Date(), 7) && date <= new Date();
     });
 
     return (

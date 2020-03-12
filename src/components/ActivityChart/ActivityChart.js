@@ -10,20 +10,37 @@ import {
 
 function ActivityChart(props) {
   const data = props.logs.map(log => ({
-    date: format(new Date(log.start_time), "iii M/dd"),
+    date: format(new Date(log.start_time), "iiiiii M/d"),
     hours: log.hours
   }));
 
   const dates = props.logs.map(log =>
-    format(new Date(log.start_time), "iii M/dd")
+    format(new Date(log.start_time), "iiiiii M/d")
   );
 
   return (
     <div className="ActivityChart">
-      <VictoryChart domainPadding={10} theme={VictoryTheme.material}>
-        <VictoryAxis tickValues={dates} />
-        <VictoryAxis dependentAxis tickFormat={[0, 2, 4, 6, 8, 10]} />
-        <VictoryLabel text="Hours" x={0} y={12} textAnchor="start" />
+      <VictoryChart
+        domainPadding={10}
+        width={500}
+        theme={VictoryTheme.material}
+      >
+        <VictoryAxis
+          tickValues={dates}
+          style={{ tickLabels: { fontSize: 15 } }}
+        />
+        <VictoryAxis
+          dependentAxis
+          tickFormat={[0, 2, 4, 6, 8, 10]}
+          style={{ tickLabels: { fontSize: 15 } }}
+        />
+        <VictoryLabel
+          text="Hours"
+          dy={30}
+          dx={15}
+          textAnchor="start"
+          style={{ fontSize: 15 }}
+        />
         <VictoryBar data={data} x={"date"} y={"hours"} />
       </VictoryChart>
     </div>
