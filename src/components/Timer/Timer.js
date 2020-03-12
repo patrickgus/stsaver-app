@@ -116,7 +116,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="pomodoro-clock">
+      <div className="Timer">
         <Settings
           breakLength={this.state.breakLength}
           sessionLength={this.state.sessionLength}

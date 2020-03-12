@@ -1,6 +1,6 @@
-@media (min-width: 768px) {
-  .pomodoro-clock {
-    width: 768px;
+@media screen and (min-width: 680px) {
+  .Timer {
+    width: 680px;
     margin: 0 auto;
   }
 }
