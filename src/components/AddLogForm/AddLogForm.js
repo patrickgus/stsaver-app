@@ -12,6 +12,7 @@ class AddLogForm extends Component {
     e.preventDefault();
     const { start_time, end_time, media, breaks } = e.target;
     const { userId } = this.context;
+    console.log("newLog", start_time.value);
     
     LogApiService.postLog(
       userId,
