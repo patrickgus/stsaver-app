@@ -106,9 +106,6 @@ class LogListItem extends Component {
 
   renderDefaultView = () => {
     const log = this.props.log;
-    console.log(log.id, log.start_time);
-    console.log(log.id, new Date(log.start_time));
-    
     return (
       <>
         <h3>{format(new Date(log.start_time), "MM-dd-yyyy")}</h3>
