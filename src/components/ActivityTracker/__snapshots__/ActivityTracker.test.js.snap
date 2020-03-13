@@ -74,8 +74,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={128.00121876904328}
-              x2={128.00121876904328}
+              x1={126.00950118764847}
+              x2={126.00950118764847}
               y1={300}
               y2={50}
             />
@@ -93,8 +93,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={128.00121876904328}
-              x2={128.00121876904328}
+              x1={126.00950118764847}
+              x2={126.00950118764847}
               y1={300}
               y2={305}
             />
@@ -103,7 +103,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dx={0}
               dy={12.825}
               id="chart-axis-0-tickLabels-0"
-              x={128.00121876904328}
+              x={126.00950118764847}
               y={313}
             >
               <tspan
@@ -120,7 +120,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                   }
                 }
                 textAnchor="middle"
-                x={128.00121876904328}
+                x={126.00950118764847}
               >
                 0.2
               </tspan>
@@ -143,8 +143,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={206.00243753808655}
-              x2={206.00243753808655}
+              x1={202.01900237529694}
+              x2={202.01900237529694}
               y1={300}
               y2={50}
             />
@@ -162,8 +162,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={206.00243753808655}
-              x2={206.00243753808655}
+              x1={202.01900237529694}
+              x2={202.01900237529694}
               y1={300}
               y2={305}
             />
@@ -172,7 +172,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dx={0}
               dy={12.825}
               id="chart-axis-0-tickLabels-1"
-              x={206.00243753808655}
+              x={202.01900237529694}
               y={313}
             >
               <tspan
@@ -189,7 +189,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                   }
                 }
                 textAnchor="middle"
-                x={206.00243753808655}
+                x={202.01900237529694}
               >
                 0.4
               </tspan>
@@ -212,8 +212,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={284.0036563071298}
-              x2={284.0036563071298}
+              x1={278.0285035629454}
+              x2={278.0285035629454}
               y1={300}
               y2={50}
             />
@@ -231,8 +231,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={284.0036563071298}
-              x2={284.0036563071298}
+              x1={278.0285035629454}
+              x2={278.0285035629454}
               y1={300}
               y2={305}
             />
@@ -241,7 +241,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dx={0}
               dy={12.825}
               id="chart-axis-0-tickLabels-2"
-              x={284.0036563071298}
+              x={278.0285035629454}
               y={313}
             >
               <tspan
@@ -258,7 +258,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                   }
                 }
                 textAnchor="middle"
-                x={284.0036563071298}
+                x={278.0285035629454}
               >
                 0.6
               </tspan>
@@ -281,8 +281,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={362.0048750761731}
-              x2={362.0048750761731}
+              x1={354.03800475059387}
+              x2={354.03800475059387}
               y1={300}
               y2={50}
             />
@@ -300,8 +300,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={362.0048750761731}
-              x2={362.0048750761731}
+              x1={354.03800475059387}
+              x2={354.03800475059387}
               y1={300}
               y2={305}
             />
@@ -310,7 +310,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dx={0}
               dy={12.825}
               id="chart-axis-0-tickLabels-3"
-              x={362.0048750761731}
+              x={354.03800475059387}
               y={313}
             >
               <tspan
@@ -327,7 +327,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                   }
                 }
                 textAnchor="middle"
-                x={362.0048750761731}
+                x={354.03800475059387}
               >
                 0.8
               </tspan>
@@ -350,8 +350,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={440.00609384521636}
-              x2={440.00609384521636}
+              x1={430.0475059382423}
+              x2={430.0475059382423}
               y1={300}
               y2={50}
             />
@@ -369,8 +369,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                 }
               }
               vectorEffect="non-scaling-stroke"
-              x1={440.00609384521636}
-              x2={440.00609384521636}
+              x1={430.0475059382423}
+              x2={430.0475059382423}
               y1={300}
               y2={305}
             />
@@ -379,7 +379,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dx={0}
               dy={12.825}
               id="chart-axis-0-tickLabels-4"
-              x={440.00609384521636}
+              x={430.0475059382423}
               y={313}
             >
               <tspan
@@ -396,7 +396,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
                   }
                 }
                 textAnchor="middle"
-                x={440.00609384521636}
+                x={430.0475059382423}
               >
                 1
               </tspan>
@@ -512,8 +512,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={450}
-              y1={251.9969278033794}
-              y2={251.9969278033794}
+              y1={253.9764359351988}
+              y2={253.9764359351988}
             />
             <line
               role="presentation"
@@ -531,8 +531,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={45}
-              y1={251.9969278033794}
-              y2={251.9969278033794}
+              y1={253.9764359351988}
+              y2={253.9764359351988}
             />
             <text
               direction="inherit"
@@ -540,7 +540,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dy={5.324999999999999}
               id="chart-axis-1-tickLabels-1"
               x={37}
-              y={251.9969278033794}
+              y={253.9764359351988}
             >
               <tspan
                 dx={0}
@@ -581,8 +581,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={450}
-              y1={203.9938556067588}
-              y2={203.9938556067588}
+              y1={207.95287187039764}
+              y2={207.95287187039764}
             />
             <line
               role="presentation"
@@ -600,8 +600,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={45}
-              y1={203.9938556067588}
-              y2={203.9938556067588}
+              y1={207.95287187039764}
+              y2={207.95287187039764}
             />
             <text
               direction="inherit"
@@ -609,7 +609,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dy={5.324999999999999}
               id="chart-axis-1-tickLabels-2"
               x={37}
-              y={203.9938556067588}
+              y={207.95287187039764}
             >
               <tspan
                 dx={0}
@@ -650,8 +650,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={450}
-              y1={155.99078341013825}
-              y2={155.99078341013825}
+              y1={161.9293078055965}
+              y2={161.9293078055965}
             />
             <line
               role="presentation"
@@ -669,8 +669,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={45}
-              y1={155.99078341013825}
-              y2={155.99078341013825}
+              y1={161.9293078055965}
+              y2={161.9293078055965}
             />
             <text
               direction="inherit"
@@ -678,7 +678,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dy={5.324999999999999}
               id="chart-axis-1-tickLabels-3"
               x={37}
-              y={155.99078341013825}
+              y={161.9293078055965}
             >
               <tspan
                 dx={0}
@@ -719,8 +719,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={450}
-              y1={107.98771121351768}
-              y2={107.98771121351768}
+              y1={115.9057437407953}
+              y2={115.9057437407953}
             />
             <line
               role="presentation"
@@ -738,8 +738,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={45}
-              y1={107.98771121351768}
-              y2={107.98771121351768}
+              y1={115.9057437407953}
+              y2={115.9057437407953}
             />
             <text
               direction="inherit"
@@ -747,7 +747,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dy={5.324999999999999}
               id="chart-axis-1-tickLabels-4"
               x={37}
-              y={107.98771121351768}
+              y={115.9057437407953}
             >
               <tspan
                 dx={0}
@@ -788,8 +788,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={450}
-              y1={59.98463901689709}
-              y2={59.98463901689709}
+              y1={69.88217967599412}
+              y2={69.88217967599412}
             />
             <line
               role="presentation"
@@ -807,8 +807,8 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               vectorEffect="non-scaling-stroke"
               x1={50}
               x2={45}
-              y1={59.98463901689709}
-              y2={59.98463901689709}
+              y1={69.88217967599412}
+              y2={69.88217967599412}
             />
             <text
               direction="inherit"
@@ -816,7 +816,7 @@ exports[`ActivityTracker component renders the UI as expected 1`] = `
               dy={5.324999999999999}
               id="chart-axis-1-tickLabels-5"
               x={37}
-              y={59.98463901689709}
+              y={69.88217967599412}
             >
               <tspan
                 dx={0}
