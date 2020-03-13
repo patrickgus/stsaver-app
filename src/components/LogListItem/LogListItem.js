@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { format } from "date-fns";
+import moment from "moment";
 import { Input, Button } from "../Utils/Utils";
 import LogApiService from "../../services/log-api-service";
 import LogContext from "../../contexts/LogContext";
@@ -105,21 +106,23 @@ class LogListItem extends Component {
   };
 
   renderDefaultView = () => {
-    const log = this.props.log;
+    const { start_time, end_time, hours, media, breaks } = this.props.log;
+    console.log(moment(start_time).format("MM-DD-YYYY"));
+    
     return (
       <>
-        <h3>{format(new Date(log.start_time), "MM-dd-yyyy")}</h3>
+        <h3>{moment(start_time).format("MM-DD-YYYY")}</h3>
         <p>
-          {format(new Date(log.start_time), "h:mma")} -{" "}
-          {format(new Date(log.end_time), "h:mma")}
+          {moment(start_time).format("h:mmA")} -{" "}
+          {moment(end_time).format("h:mmA")}
         </p>
         <dl>
           <dt>Screen Hours:</dt>
-          <dd>{log.hours}</dd>
+          <dd>{hours}</dd>
           <dt>Media type:</dt>
-          <dd>{log.media}</dd>
+          <dd>{media}</dd>
           <dt>Breaks taken:</dt>
-          <dd>{log.breaks}</dd>
+          <dd>{breaks}</dd>
         </dl>
         <div className="LogListItem__buttons">
           <Button className="edit" onClick={this.handleEdit}>Edit</Button>
