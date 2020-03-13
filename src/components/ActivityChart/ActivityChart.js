@@ -21,7 +21,7 @@ function ActivityChart(props) {
   return (
     <div className="ActivityChart">
       <VictoryChart
-        domainPadding={10}
+        domainPadding={20}
         width={500}
         theme={VictoryTheme.material}
       >
