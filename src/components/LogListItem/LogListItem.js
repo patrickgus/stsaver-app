@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { format } from "date-fns";
 import moment from "moment";
 import { Input, Button } from "../Utils/Utils";
 import LogApiService from "../../services/log-api-service";
@@ -30,7 +29,7 @@ class LogListItem extends Component {
       breaks.value
     ).then(res => {
       LogApiService.getLogs(userId).then(this.context.setLogList);
-      this.setState({ editing: false })
+      this.setState({ editing: false });
     });
   };
 
@@ -51,9 +50,9 @@ class LogListItem extends Component {
   };
 
   renderEditingView = () => {
-    const log = this.props.log;
-    const start_time = format(new Date(log.start_time), "yyyy-MM-dd'T'HH:mm");
-    const end_time = format(new Date(log.end_time), "yyyy-MM-dd'T'HH:mm");
+    const { start_time, end_time, media, breaks } = this.props.log;
+    const start = moment(start_time).format("YYYY-DD-MMTHH:mm");
+    const end = moment(end_time).format("YYYY-DD-MMTHH:mm");
 
     return (
       <form className="LogListItem__edit-form" onSubmit={this.handleSubmit}>
@@ -63,7 +62,7 @@ class LogListItem extends Component {
             type="datetime-local"
             name="start_time"
             id="start_time"
-            defaultValue={start_time}
+            defaultValue={start}
             required
           />
         </div>
@@ -73,13 +72,13 @@ class LogListItem extends Component {
             type="datetime-local"
             name="end_time"
             id="end_time"
-            defaultValue={end_time}
+            defaultValue={end}
             required
           />
         </div>
         <div className="LogListItem__form-section">
           <label htmlFor="media">Media type</label>
-          <select name="media" id="media" defaultValue={log.media} required>
+          <select name="media" id="media" defaultValue={media} required>
             <option value="">--Choose one--</option>
             <option value="computer">Computer</option>
             <option value="phone">Phone</option>
@@ -93,7 +92,7 @@ class LogListItem extends Component {
             type="number"
             name="breaks"
             id="breaks"
-            defaultValue={log.breaks}
+            defaultValue={breaks}
             required
           />
         </div>
@@ -107,8 +106,6 @@ class LogListItem extends Component {
 
   renderDefaultView = () => {
     const { start_time, end_time, hours, media, breaks } = this.props.log;
-    console.log(moment(start_time).format("MM-DD-YYYY"));
-    
     return (
       <>
         <h3>{moment(start_time).format("MM-DD-YYYY")}</h3>
@@ -125,7 +122,9 @@ class LogListItem extends Component {
           <dd>{breaks}</dd>
         </dl>
         <div className="LogListItem__buttons">
-          <Button className="edit" onClick={this.handleEdit}>Edit</Button>
+          <Button className="edit" onClick={this.handleEdit}>
+            Edit
+          </Button>
           <Button onClick={this.handleDelete}>Delete</Button>
         </div>
       </>
