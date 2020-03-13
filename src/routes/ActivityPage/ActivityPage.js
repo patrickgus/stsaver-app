@@ -31,9 +31,7 @@ class ActivityPage extends Component {
   };
 
   render() {
-    const { error, logList } = this.context;
-    console.log(logList);
-
+    const { error } = this.context;
     return (
       <div className="ActivityPage">
         <header className="ActivityPage__header">
