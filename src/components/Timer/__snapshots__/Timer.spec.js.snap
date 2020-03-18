@@ -107,7 +107,7 @@ exports[`Timer component renders the timer as expected 1`] = `
   <audio
     id="beep"
     preload="auto"
-    src="https://goo.gl/65cBl1"
+    src="alarm_clock.ogg"
   />
 </div>
 `;
