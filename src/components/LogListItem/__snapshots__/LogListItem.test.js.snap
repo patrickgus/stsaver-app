@@ -5,7 +5,7 @@ exports[`LogListItem component renders the item as expected 1`] = `
   className="LogListItem"
 >
   <h3>
-    03-04-2020
+    03-12-2020
   </h3>
   <p>
     4:00PM
