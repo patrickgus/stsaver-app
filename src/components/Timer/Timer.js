@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Settings from "./Settings/Settings";
 import Times from "./Times/Times";
 import Controller from "./Controller/Controller";
+import alarm from "../../sounds/alarm_clock.ogg";
 import "./Timer.css";
 
 export default class App extends Component {
@@ -138,7 +139,7 @@ export default class App extends Component {
         <audio
           id="beep"
           preload="auto"
-          src="https://goo.gl/65cBl1"
+          src={alarm}
           ref={this.audioBeep}
         ></audio>
       </div>
