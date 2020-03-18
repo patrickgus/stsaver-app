@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer component renders the timer as expected 1`] = `
+<div
+  className="Timer"
+>
+  <div
+    className="settings"
+  >
+    <div
+      className="settings-section"
+    >
+      <label
+        id="break-label"
+      >
+        Break Length
+      </label>
+      <div>
+        <button
+          className=""
+          id="break-decrement"
+          onClick={[Function]}
+        >
+          -
+        </button>
+        <span
+          id="break-length"
+        >
+          5
+        </span>
+        <button
+          className=""
+          id="break-increment"
+          onClick={[Function]}
+        >
+          +
+        </button>
+      </div>
+    </div>
+    <div
+      className="settings-section"
+    >
+      <label
+        id="session-label"
+      >
+        Session Length
+      </label>
+      <div>
+        <button
+          className=""
+          id="session-decrement"
+          onClick={[Function]}
+        >
+          -
+        </button>
+        <span
+          id="session-length"
+        >
+          20
+        </span>
+        <button
+          className=""
+          id="session-increment"
+          onClick={[Function]}
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="times"
+  >
+    <div
+      className="times-content"
+    >
+      <label
+        id="timer-label"
+      >
+        Session
+      </label>
+      <span
+        id="time-left"
+      >
+        20:00
+      </span>
+    </div>
+  </div>
+  <div
+    className="controller"
+  >
+    <button
+      className="Button "
+      id="start_stop"
+      onClick={[Function]}
+    >
+      Start
+    </button>
+    <button
+      className="Button "
+      id="reset"
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+  <audio
+    id="beep"
+    preload="auto"
+    src="https://goo.gl/65cBl1"
+  />
+</div>
+`;
